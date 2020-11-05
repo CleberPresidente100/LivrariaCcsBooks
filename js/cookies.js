@@ -42,9 +42,8 @@ function ObterCookie(key){
         console.log("Item [0]: ", cookie[0]);
         console.log("Item [1]: ", cookie[1]);
         if(cookie[0] == key){
-            console.log("Usuário Encontrado");
-
             chaveEncontrada = cookie[1];
+            console.log("chaveEncontrada: ", cookie[1]);
             return;
         }
     });

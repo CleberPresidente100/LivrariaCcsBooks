@@ -28,6 +28,7 @@
 	<!-- Bibliotecas de Java Script -->
     <script src="../js/cookies.js"></script> 
     <script src="../js/usuarios.js"></script> 
+    <script src="../js/conexaoBanco.js"></script>
     
 </head>
 <body>
@@ -54,9 +55,23 @@
     <input type="button" onclick="ObterCookie('nomeUsuario_3')" value="Listar nomeUsuario_3">
     <input type="button" onclick="ObterTodosCookies()" value="Listar Tudo"> -->
 
-    <input type="button" onclick="CadastrarUsuario('Cleber', 'cleber@presidente.100')" value="Gravar Cleber">
-    <input type="button" onclick="ApagarCookie('Usuarios')" value="Apagar Cleber">
-    <input type="button" onclick="ObterTodosCookies()" value="Listar Tudo">
+
+
+    <label for="nome" class="tituloCampo">NOME DE USUÁRIO</label>
+    <input class="campoTexto" type="text" id="nome" name="nome" placeholder="Ex: CLEBER PRESIDENTE 100%" maxlength="50" required><br><br>
+
+    <label for="email" class="tituloCampo">E-MAIL</label>
+    <input class="campoTexto" type="text" id="email" name="email" placeholder="Ex: username@dominio.com" maxlength="50" required><br><br>
+
+    <input type="button" onclick="CadastrarUsuario()" value="Cadastrar">
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!-- <input type="button" onclick="CadastrarUsuario('Cleber', 'cleber@presidente.100')" value="Gravar Cleber"> -->
+    <input type="button" onclick="ApagarCookie('Usuarios')" value="Apagar Tabela Usuarios">
+    <input type="button" onclick="ObterTodosCookies()" value="Listar Tabela Usuarios">
 
     
 
