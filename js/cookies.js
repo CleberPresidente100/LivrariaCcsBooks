@@ -36,6 +36,7 @@ function ObterCookie(key){
     var allCookies = ObterTodosCookies();
     console.log("Lista de Cookies : ", allCookies);
 
+    var chaveEncontrada = null; 
     allCookies.forEach(function(item){
         var cookie = item.split("=");
         console.log("Item [0]: ", cookie[0]);
@@ -43,11 +44,12 @@ function ObterCookie(key){
         if(cookie[0] == key){
             console.log("Usuário Encontrado");
 
-            return cookie[1];
+            chaveEncontrada = cookie[1];
+            return;
         }
     });
 
-    return null;
+    return chaveEncontrada;
 }
 
 
