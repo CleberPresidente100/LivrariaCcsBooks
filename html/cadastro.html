@@ -27,9 +27,11 @@
 
 	<!-- Bibliotecas de Java Script -->
     <script src="../js/cookies.js"></script> 
+    <script src="../js/usuarios.js"></script> 
     
 </head>
 <body>
+<!--     
     <script type="text/javascript">
         //'use strict';
         VerificarCookiesHabilitados();
@@ -37,16 +39,10 @@
         // ObterCookie("nomeUsuario", "Cleber");
         // ApagarCookie("nomeUsuario");
         ObterTodosCookies();
-    </script>
+    </script> -->
 
-    <noscript>
-        Esta página faz uso de JavaScript.<br>
-        Habilite o JavaScript do seu navegador para utilizar esta página.
-
-        <!-- Colocar este código "noscript" no index.html para ser exibido caso o navegador não suporte javascript.
-        E fazer a chamada para a página inicial através de um javascript para garantir que o site só seja exibido caso o navegador suporte JavaScript. -->
-    </noscript>
-
+    
+<!-- 
     <input type="button" onclick="GravarCookie('nomeUsuario_1', 'Cleber')" value="Gravar Cleber">
     <input type="button" onclick="GravarCookie('nomeUsuario_2', 'Presidente')" value="Gravar Presidente">
     <input type="button" onclick="GravarCookie('nomeUsuario_3', '100%')" value="Gravar 100%">
@@ -56,7 +52,13 @@
     <input type="button" onclick="ObterCookie('nomeUsuario_1')" value="Listar nomeUsuario_1">
     <input type="button" onclick="ObterCookie('nomeUsuario_2')" value="Listar nomeUsuario_2">
     <input type="button" onclick="ObterCookie('nomeUsuario_3')" value="Listar nomeUsuario_3">
+    <input type="button" onclick="ObterTodosCookies()" value="Listar Tudo"> -->
+
+    <input type="button" onclick="CadastrarUsuario('Cleber', 'cleber@presidente.100')" value="Gravar Cleber">
+    <input type="button" onclick="ApagarCookie('Usuarios')" value="Apagar Cleber">
     <input type="button" onclick="ObterTodosCookies()" value="Listar Tudo">
+
+    
 
 </body>
 </html>

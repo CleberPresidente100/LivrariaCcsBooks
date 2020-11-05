@@ -16,7 +16,7 @@ function VerificarCookiesHabilitados(){
 function ObterTodosCookies(){
     // Obtém a lista de todos os Cookies
     console.log("Lista de Cookies : ", document.cookie);
-    return document.cookie;    
+    return document.cookie.split(";");    
 }
 
 
@@ -25,13 +25,29 @@ function ObterCookie(key){
     
     // Verifica se o nome da chave e o valor do Cookie são válidos.
     if(key == null){
-        alert("Obter Cookie : Nome da Chave é inválido !");
+        alert("Obter Cookie : Nome da Chave é inválida !");
         return;
     }
 
+    console.log("key: ", key);
+
+
     // Obtém a lista de todos os Cookies
-    var allCookies = ObterTodosCookies().split(";");
-    console.log("Lista de Cookies : ", allCookies);    
+    var allCookies = ObterTodosCookies();
+    console.log("Lista de Cookies : ", allCookies);
+
+    allCookies.forEach(function(item){
+        var cookie = item.split("=");
+        console.log("Item [0]: ", cookie[0]);
+        console.log("Item [1]: ", cookie[1]);
+        if(cookie[0] == key){
+            console.log("Usuário Encontrado");
+
+            return cookie[1];
+        }
+    });
+
+    return null;
 }
 
 
@@ -50,7 +66,7 @@ function GravarCookie(key, value){
 
     // Configura o Cookie para expirar em 1 Ano
     var data = new Date();
-    data.setFullYear(data.getFullYear() + 1);
+    data.setMonth(data.getMonth() + 1);
 
     // Cria Cookie
     var temp = key + "=" + value + "; expires=" + data.toUTCString() + "; path=/;";

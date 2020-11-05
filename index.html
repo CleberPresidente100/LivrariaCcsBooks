@@ -25,54 +25,21 @@
     <!-- Bibliotecas de CSS -->
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 
-	<!-- Bibliotecas de Java Script -->
-    <script src="script.js"></script> 
+	<!-- Redireciona o Usuário para a Página Principal Caso o JavaScript esteja Habilitado -->
+    <script>
+		window.location.replace("paginaPrincipal.html");
+	</script> 
     
 </head>
 <body>
-	
-	<div class="colunaEsquerda"></div>
 
-	<div class="corpoFormulario">
+	<noscript>
+        Esta página faz uso de JavaScript.<br>
+        Habilite o JavaScript do seu navegador para utilizar esta página.
 
-		<div class="titulo">
-			FINALIZAR PAGAMENTO
-		</div>
-
-		<div>
-			<form name="formulario">
-
-				<label for="email" class="tituloCampo">E-mail</label>
-				<input class="campoTexto" type="text" id="email" name="email" placeholder="Ex: username@dominio.com" maxlength="50" required><br><br>
-
-				<label for="nome" class="tituloCampo">NOME (Escrito como no cartão)</label>
-				<input class="campoTexto" type="text" id="nome" name="nome" placeholder="Ex: JOAO A DOS" maxlength="50" required><br><br>
-
-				<label for="numeroCartao" class="tituloCampo">NUMERO DO CARTAO</label>
-				<input
-					class="campoTexto"
-					type="text"
-					id="numeroCartao"
-					name="numeroCartao"
-					placeholder="Ex: 4999 9999 9999 5499"
-					maxlength="16"
-					required><br><br>
-
-				<div class="linhaDividida">
-					<label for="digito" class="tituloCampo">CVV</label>
-					<input class="campoTexto" type="text" id="digito" name="digito" placeholder="Ex: 123" maxlength="3" required><br><br>				
-				</div>
-				
-				<div class="linhaDividida">
-					<label for="validade" class="tituloCampo">MM/AA</label>
-					<input class="campoTexto" type="text" id="validade" name="validade" placeholder="Ex: 01/23" maxlength="5" required><br><br>
-				</div>
-				
-				<input onclick="finalizar()" class="botaoFinalizar" type="submit" value="FINALIZAR">	
-
-			</form>	
-		</div>
-	</div>
+        <!-- Colocar este código "noscript" no index.html para ser exibido caso o navegador não suporte javascript.
+        E fazer a chamada para a página inicial através de um javascript para garantir que o site só seja exibido caso o navegador suporte JavaScript. -->
+    </noscript>
 
 </body>
 </html>
