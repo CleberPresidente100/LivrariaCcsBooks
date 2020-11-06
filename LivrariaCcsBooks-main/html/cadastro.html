@@ -1,0 +1,79 @@
+
+
+<!-- PÁGINA TESTADA UTILIZANDO O NAVEGADOR FIREFOX versão: 82.0 (64bits) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastrar Usuário</title>
+
+	<!-- Configuração do Mapa de Caracteres -->
+    <meta charset="UTF-8">
+    <!-- Nome da Disciplina -->
+    <meta name="disciplina" content="Ciencia da Computacao I">
+    <!-- Desenvolvedor da página -->
+    <meta name="author" content="Cleber da Silva Melo">
+    <!-- Desenvolvedor da página -->
+    <meta name="ra" content="335338215650">
+    <!-- Desenvolvedor da página -->
+    <meta name="curso" content="Ciencia da Computacao">
+    <!-- Desenvolvedor da página -->
+    <meta name="semestre" content="5">
+    <!-- Palavras chaves para buscas -->
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,CLEBER,PROVA,CIENCIA DA COMPUTACAO">
+
+    <!-- Bibliotecas de CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="estilo.css"> -->
+
+	<!-- Bibliotecas de Java Script -->
+    <script src="../js/cookies.js"></script> 
+    <script src="../js/usuarios.js"></script> 
+    <script src="../js/conexaoBanco.js"></script>
+    
+</head>
+<body>
+<!--     
+    <script type="text/javascript">
+        //'use strict';
+        VerificarCookiesHabilitados();
+        // GravarCookie("nomeUsuario", "Cleber");
+        // ObterCookie("nomeUsuario", "Cleber");
+        // ApagarCookie("nomeUsuario");
+        ObterTodosCookies();
+    </script> -->
+
+    
+<!-- 
+    <input type="button" onclick="GravarCookie('nomeUsuario_1', 'Cleber')" value="Gravar Cleber">
+    <input type="button" onclick="GravarCookie('nomeUsuario_2', 'Presidente')" value="Gravar Presidente">
+    <input type="button" onclick="GravarCookie('nomeUsuario_3', '100%')" value="Gravar 100%">
+    <input type="button" onclick="ApagarCookie('nomeUsuario_1')" value="Apagar Cleber">
+    <input type="button" onclick="ApagarCookie('nomeUsuario_2')" value="Apagar Presidente">
+    <input type="button" onclick="ApagarCookie('nomeUsuario_3')" value="Apagar 100%">
+    <input type="button" onclick="ObterCookie('nomeUsuario_1')" value="Listar nomeUsuario_1">
+    <input type="button" onclick="ObterCookie('nomeUsuario_2')" value="Listar nomeUsuario_2">
+    <input type="button" onclick="ObterCookie('nomeUsuario_3')" value="Listar nomeUsuario_3">
+    <input type="button" onclick="ObterTodosCookies()" value="Listar Tudo"> -->
+
+
+
+    <label for="nome" class="tituloCampo">NOME DE USUÁRIO</label>
+    <input class="campoTexto" type="text" id="nome" name="nome" placeholder="Ex: CLEBER PRESIDENTE 100%" maxlength="50" required><br><br>
+
+    <label for="email" class="tituloCampo">E-MAIL</label>
+    <input class="campoTexto" type="text" id="email" name="email" placeholder="Ex: username@dominio.com" maxlength="50" required><br><br>
+
+    <input type="button" onclick="CadastrarUsuario()" value="Cadastrar">
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <!-- <input type="button" onclick="CadastrarUsuario('Cleber', 'cleber@presidente.100')" value="Gravar Cleber"> -->
+    <input type="button" onclick="ApagarCookie('Usuarios')" value="Apagar Tabela Usuarios">
+    <input type="button" onclick="ObterTodosCookies()" value="Listar Tabela Usuarios">
+
+    
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.interface{
+	width: 95%;
+	padding: 5px;
+	align-items: center;
+	margin: auto;
+}
+
+/*-------------------------------------------------------------------------body---------------------------------------*/
+body{
+	background-color: rgb(77, 218, 243);
+	margin: 0;
+	padding: 0;
+}
+div#artigo{
+	display: block;
+	width: 95%;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+header{/*------------------------------------------------------------------header------------------------------------*/
+	display: block;
+	width: 95%;
+	height: 215px;
+	margin-bottom: 10px;
+}
+div#cabecalho{
+	display: block;
+	height: 215px;
+}
+#logo{
+	position: absolute;
+	left: 50%;
+	margin-left: -174.5px;
+	top: 20px;
+}
+#cadastro{
+	position: relative;
+	float: left;
+}
+#carrinho{
+	position: relative;
+	float: right;
+	right: 10px;
+}
+nav#menu{
+	display: block;
+	width: 95%;
+	}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	background-color: rgb(61, 99, 206);
+	width: 95%;
+	display:flex; 
+	justify-content:space-around;
+	top: 170px;
+	position: absolute;
+}
+nav#menu a{
+	border: 1px black solid;
+	display: inline-block;
+	width: 33.33%;
+	text-align: center;
+	padding: 2px;
+	text-decoration: none;
+	color: black;
+}
+nav#menu a:hover{
+	background-color: rgb(145, 163, 245);
+	color: blanchedalmond;
+}
+
+/*--------------------------------------------------------------------------footer-----------------------------------*/
+footer{
+	display: block;
+	position: relative;
+	margin-bottom: 0%;
+	width: 100%;
+	height: 70px;
+	border-top: 1px black solid;
+}
+footer ul{
+	text-align: center;
+	list-style: none;
+	
+}

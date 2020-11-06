@@ -1,0 +1,12 @@
+JavaScript
+    Cookies -->
+        https://www.w3schools.com/js/js_cookies.asp
+        https://javascript.info/cookie
+        https://www.daniweb.com/programming/web-development/threads/361898/cookie-not-working-in-chrome
+
+
+    Cookies Enabled --> 
+        https://www.w3schools.com/jsref/prop_nav_cookieenabled.asp
+        https://code2care.org/pages/detect-if-cookies-are-enabled-using-javascript
+
+    
