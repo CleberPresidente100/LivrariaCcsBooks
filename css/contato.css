@@ -1,0 +1,157 @@
+body{
+	background:#B0C4DE;
+}
+a,b,h1,h2,h3,h4{
+	font-family:courier,arial,helvetica;
+	}
+input{
+	background:#DCDCDC;
+}
+textarea{
+	background:#DCDCDC;
+}
+#enviar{
+	background-color: #6495ED;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 7px;
+	font-family:courier,arial,helvetica;
+	
+}
+
+#global{
+	height: 30%;
+	width: 100%;
+	float: left;
+	background:#6495ED;
+	
+}
+#logo{
+	height: 100%;
+	width: 20%;
+	float: left;
+	
+}
+
+.logo{
+	height: 60%;
+	width: 100%;
+	float: left;
+}
+
+
+#contato{
+	list-style-type:none
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	cellspacing:10px;
+}
+
+#linharedess{
+
+}
+
+#menu{
+	float:right;
+	list-style-type:none
+	text-decoration: none;
+	
+}
+.menu{
+	list-style-type:none
+	text-decoration: none;
+	margin-top: 40px;
+	float:right;
+	margin-right: 50px;
+	
+}
+a{
+	font-weight: bolder;
+	color: #FFF;
+	
+}
+a:hover{
+	background-color: #6495ED;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 7px;
+	
+}
+
+
+.enviodemsg{
+	float:center;
+	height:20px ;
+	width: 65%;
+	border-style: inset;
+	border-color: #0000FF;
+	border-width: 3px;
+	border-radius: 7px;
+	
+}
+.enviodemsg2{
+	float:center;
+	height:60px ;
+	width: 65%;
+	border-style: inset;
+	border-color: #0000FF;
+	border-width: 3px;
+	border-radius: 5px;
+	
+}
+
+#centraldeatendimento{
+	height: 200px;
+	width: 50%;
+	float:center;
+	border-radius: 10px;
+}
+#contato{
+
+   	margin-right: 400px;
+  	margin-left: 40px;
+}
+.contato{
+	list-style-type:none
+	float:center;
+   	margin-right: 300px;
+  	margin-left: 30px;
+}
+#imgredess{
+	list-style-type:none
+	height: 40px;
+	width: 40px;
+	margin : 3;
+	border-radius: 50%;
+	cellspacing:10px;
+   	margin-right: 60px;
+  	margin-left: 10px;
+	
+}
+.redess{
+	list-style-type:none
+	
+	
+	}
+
+footer{
+	margin-top: 2cm;
+	background:#6495ED;
+	position: absolute;
+	bottom: -80%;
+	padding-bottom: 30px;
+	width: 100%;
+	height:40%;
+	
+}
+.rodapechar{
+	margin-left: 3cm;
+	
+}
+#logorodape{
+	margin-top: 1cm;
+	height: 20%;
+	width: 30%;
+	float: left;
+}
