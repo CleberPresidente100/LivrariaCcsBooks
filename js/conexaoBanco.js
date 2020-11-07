@@ -12,5 +12,5 @@ function LerTabela(nomeTabela){
 
 function GravarNaTabela(nomeTabela, dados){
 
-    GravarCookie(nomeTabela, dados);
+    return GravarCookie(nomeTabela, dados);
 }

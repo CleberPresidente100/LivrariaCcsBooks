@@ -5,10 +5,12 @@ function VerificarCookiesHabilitados(){
     
     if(!navigator.cookieEnabled){
         alert("Cookies Desabilitados !");
-        return;
+        return false;
     }
 
     console.log("Cookies Habilitados !");
+
+    return true;
 }
 
 
@@ -26,7 +28,7 @@ function ObterCookie(key){
     // Verifica se o nome da chave e o valor do Cookie são válidos.
     if(key == null){
         alert("Obter Cookie : Nome da Chave é inválida !");
-        return;
+        return null;
     }
 
     console.log("key: ", key);
@@ -58,11 +60,11 @@ function GravarCookie(key, value){
     // Não grava o Cookei se a chave ou o valor for nulo.
     if(key == null){
         alert("Gravar Cookie : Nome da Chave é inválido !");
-        return;
+        return false;
     }
     if(value == null){
         alert("Gravar Cookie : Valor da Chave é inválida !");
-        return;
+        return false;
     }
 
     // Configura o Cookie para expirar em 1 Ano
@@ -72,7 +74,9 @@ function GravarCookie(key, value){
     // Cria Cookie
     var temp = key + "=" + value + "; expires=" + data.toUTCString() + "; path=/;";
     document.cookie = temp;
-    console.log("Cookie sendo Gravado : ", temp);    
+    console.log("Cookie sendo Gravado : ", temp);
+    
+    return true;
 }
 
 

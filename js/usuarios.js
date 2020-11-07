@@ -8,7 +8,6 @@ var PosicaoEmail = 1;       // Após a extração do Registro, esta é a Posiç�
 
 
 function CadastrarUsuario(){
-// function CadastrarUsuario(nome, email){
 
     // console.log("Início Cadastro de Usuários");
 
@@ -16,16 +15,16 @@ function CadastrarUsuario(){
     var email = document.getElementById("email").value;
 
     // Verifica se os campos estão preenchidos
-    if(nome == null || email == null){
+    if(EstaNuloOuVazio(nome) || EstaNuloOuVazio(email)){
         alert("Nome de Usuário ou E-mail inválido !");
-        return;
+        return false;
     }
 
     var usuarioJaExiste = ProcurarUsuario(nome, email);
 
     if(usuarioJaExiste){
         alert("Nome de Usuário ou E-mail já cadastrado !");
-        return;
+        return false;
     }
     
 
@@ -48,6 +47,11 @@ function CadastrarUsuario(){
 
     GravarNaTabela(nomeTabela, tabelaUsuariosAtualizada);
 
+    alert("Usuário cadastrado com Sucesso !");
+
+    return true;
+
+
 
     // var Usuarios2 = LerTabela(nomeTabela);
     // console.log("Usuarios 2 : ", Usuarios2);
@@ -61,9 +65,9 @@ function CadastrarUsuario(){
 function ProcurarUsuario(nome, email){
 
     // Verifica se os campos estão preenchidos
-    if(nome == null && email == null){
+    if(EstaNuloOuVazio(nome) && EstaNuloOuVazio(email)){
         console.log("Nome de Usuário ou E-mail inválido !");
-        return;
+        return false;
     }
 
     // Obtém a lista de todos os Usuários
@@ -93,6 +97,35 @@ function ProcurarUsuario(nome, email){
     }
 
     return false;
+}
+
+
+
+
+function Logar(){
+
+
+    // console.log("Início Cadastro de Usuários");
+
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+
+    // Verifica se os campos estão preenchidos
+    if(EstaNuloOuVazio(nome) || EstaNuloOuVazio(email)){
+        alert("Nome de Usuário ou E-mail inválido !");
+        return false;
+    }
+    
+    console.log("nome email: ", nome, email);
+
+    var usuarioJaExiste = ProcurarUsuario(nome, email);
+
+    if(!usuarioJaExiste){
+        alert("Usuário não cadastrado !");
+        return false;
+    }
+
+    return true;
 }
 
 
