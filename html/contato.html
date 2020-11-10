@@ -1,111 +1,128 @@
+<!-- PÁGINA TESTADA UTILIZANDO O NAVEGADOR FIREFOX versão: 81.0.1 -->
+
 <!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-<teatle></teatle>
-	 <link rel="stylesheet" type="text/css" href="C:\Users\Sâmila\Documents\CSSBOOKS\contato2.css">
-<head>
+    <title>Contato</title>
+    <!-- Configuração do Mapa de Caracteres -->
+    <meta charset="UTF-8">
+    <!-- Nome da Disciplina -->
+    <meta name="disciplina" content="Ciencia da Computacao I">
+    <!-- Desenvolvedor da página -->
+    <meta name="author" content="Caio Silva Barbara">
+    <!-- Desenvolvedor da página -->
+    <meta name="ra" content="335338215650">
+    <!-- Desenvolvedor da página -->
+    <meta name="curso" content="Ciencia da Computacao">
+    <!-- Desenvolvedor da página -->
+    <meta name="semestre" content="5">
+    <!-- Palavras chaves para buscas -->
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,PROVA,CIENCIA DA COMPUTACAO">
+    <!-- Bibliotecas de CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/estiloInicial.css">
+    <link rel="stylesheet" type="text/css" href="../css/contato.css">
+
+    <script type="text/javascript" src="../js/inicial.js"></script>
+
+</head>
 
 <body>
-	<div id="global">
-		<div id="logo">	
-			<b><img class="logo"src="C:\Users\Sâmila\Documents\CSSBOOKS\logo.png"></img>
-		</div>
 
+    <div class="interface">
 
-		<table id="menu">
-			<tr>
-				<li id="menu">
-					<td class="menu"><a href="#" id="menu"><b>HOME</b></a></td>
-					<td class="menu"><a href="#" id="menu"><b>CONTATO</b></a></td>
-					<td class="menu"><a href="#" id="menu"><b>SOBRE NOS</b></a></td>
-					<td class="menu"><a href="#" id="menu"><b>TODA LOJA</b></a></td>
-				</li>
-			</tr>
-		</table>
-	</div>
-	
-	<div id="envio" ><center>
-		<form method="post" action="index.com">
-		</br></br><b>Conversar com você, consumidor, é uma das coisas que mais valorizamos. Informe para nós qual a sua dúvida,
-			 informação desejada ou mesmo críticas e sugestões que estaremos sempre prontos para responder.</b></br></br
-		
-		<b>Nome:<b><br>
-		<input type="text" name="nome" placeholder="digite seu Nome aqui" class="enviodemsg"></br></br>
-		
-		<b>E-mail<b><br>
-		<input type="e-mail" name="email" placeholder="Digite seu e-mail" class="enviodemsg"></br></br>
+        <header>
+            <div id="cabecalho">
+                <a href="inicial.html"> <img src="../imagens/logo2.png" alt="CcsBooks" id="logo"></a>
 
-		<b>Cidade:<b><br>
-		<input type="text" name="Cidade" placeholder="Digite de onde vocÃª Ã©" class="enviodemsg"></br></br>
-		
-		<b>Telefone<b><br>
-		<input type="tel" placeholder="Telefone" class="enviodemsg"></br></br>
+                <a href="paginaPrincipal.html"> <img src="../imagens/icone-cadastro.png" onMouseOver="mouseEmCima(this)"
+                        onMouseOut="mouseFora(this)" id="cadastro"></a>
 
-		<b>Digite aqui sua mensagem<b><br></br>
-		<textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2"></textarea></br></br>
-		<input type="submit" name="enviar" value="Enviar" id="enviar">
-
-	</form></div>
-			<table ><center>
-				<tr>
-					<li>
-						<td id="contato"><h5><img id="contato" src="C:\Users\Sâmila\Documents\CSSBOOKS\telefone.jpg" >(11) 3500-XXX</h5></td>
-						<td id="contato" ><h5><img id="contato"src="C:\Users\Sâmila\Documents\CSSBOOKS\whats.png">(11) 3500-XXX</h5></td>
-						<td id="contato" ><h5><img id="contato" src="C:\Users\Sâmila\Documents\CSSBOOKS\email.jpg">contato@ccsbooks.com.br</h5></td>
-					</li>
-
-				</tr>
-			</table>
+                <a href=""> <img src="../imagens/icone-compras.png" onMouseOver="mouseEmCima2(this)"
+                        onMouseOut="mouseFora2(this)" id="carrinho"> </a>
 
 
 
-	<footer><center></br></br>
-			<img id="logorodape" src="C:\Users\Sâmila\Documents\CSSBOOKS\logo.png" ></img></br></br>
-	<div id="centralizarrodape"><center>
-				<table>
-					<tr>
-						<li>
-							<td class="rodapechar">
-								<h4 style="color:#fff"><i>As ofertas são válidas por tempo determinado </br> e/ou enquanto durarem os estoques.<i></h4>
-							</td>
-							<td>
-								<h4 class="rodapechar" style="color:#fff">Rua xxxxxxxxxxxx n° xxx </br>Bairro: xxxxxxxxx / Sao Paulo - SP</h4>
-							</td>
+                <nav id="menu">
+                    <ul>
+                        <a href="inicial.html">
+                            <li>inicio</li>
+                        </a>
+                        <a href="">
+                            <li>Livros</li>
+                        </a>
+                        <a href="contato.html">
+                            <li>contato</li>
+                        </a>
+                    </ul>
+                </nav>
 
-						</li>
-					</tr>
-				</table>
+            </div>
 
-				<b> </b></br>
-				<b></b>
-	
-			<table>
-				<tr>
-					<li id="linharedess">
-						<td class="redess">
+        </header>
 
-							<a href="https://www.instagram.com/?hl=pt-br">
-							<b>@CSSBOOKS<img id="imgredess" src="C:\Users\Sâmila\Documents\CSSBOOKS\instagram.jpg" >
-						</td></a>
-						<td class="redess">
-							<a href="https://pt-br.facebook.com/">
-							<b>@CSSBOOKS<img id="imgredess" src="C:\Users\Sâmila\Documents\CSSBOOKS\facebook.jpg" >
-						</td></a>
-						<td class="redess">
-							<a href="https://twitter.com/login?lang=pt">
-							<b>@CSSBOOKS<img id="imgredess" src="C:\Users\Sâmila\Documents\CSSBOOKS\twitter.jpg" >
-						</td></a>
-					</li>
+        <div id="envio">
+            <form method="post" action="index.com">
+                </br></br>
+                <h1>"Conversar com você, consumidor, é uma das coisas que mais valorizamos. Informe para nós
+                    qual a sua dúvida,
+                    informação desejada ou mesmo críticas e sugestões que estaremos sempre prontos para
+                    responder"</h1></br></br>
 
-				</tr>
-			<table>
-			
-			
-	</div>	
-	</footer>
+                <p>Nome:
+                <p><br>
+                    <input type="text" name="nome" placeholder="Digite seu Nome aqui" class="enviodemsg"></br></br>
 
+                <p>E-mail:
+                <p><br>
+                    <input type="e-mail" name="email" placeholder="Digite seu e-mail" class="enviodemsg"></br></br>
 
+                <label for=""><p>Cidade:
+                <p><br>
+                    <input type="text" name="Cidade" placeholder="Digite de onde você esta."
+                        class="enviodemsg"></br></br>
+                </label>
+                <p>Telefone:
+                <p><br>
+                    <input type="tel" placeholder="Telefone" class="enviodemsg"></br></br>
 
+                <p>Digite aqui sua mensagem:
+                <p></br></br>
+                    <textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2"></textarea></br></br>
+                    <input type="submit" name="enviar" value="Enviar" id="enviar">
 
-</div>	
+            </form>
+
+        </div>
+
+        <div id="contatoImg">
+
+            <ul>
+                <li class="contato">
+                    <img id="contato" src="C:\Users\Sâmila\Documents\CSSBOOKS\telefone.jpg">(11) 3500-XXX
+                </li>
+
+                <li class="contato">
+                    <img id="contato" src="C:\Users\Sâmila\Documents\CSSBOOKS\whats.png">(11) 3500-XXX
+                </li>
+
+                <li class="contato">
+                    <img id="contato" src="C:\Users\Sâmila\Documents\CSSBOOKS\email.jpg">contato@ccsbooks.com.br
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+        </ul>
+    </footer>
 </body>
+
 </html>
