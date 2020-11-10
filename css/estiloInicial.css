@@ -5,16 +5,18 @@
 	padding: 0;
 }
 .interface{
-	width: 95%;
+	width: 90%;
 	padding: 5px;
 	align-items: center;
 	margin: auto;
 	background-color: white;
+	border: 1px black solid;
+	box-shadow: 2px 1px 5px;
 }
 
 /*-------------------------------------------------------------------------body---------------------------------------*/
 body{
-	background-color: #3d63ce;
+	background-image:url(../imagens/fundo.jpg);
 	margin: 0;
 	padding: 0;
 }
@@ -27,7 +29,7 @@ div#artigo{
 }
 
 header{/*------------------------------------------------------------------header------------------------------------*/
-	display: block;
+	display: flex;
 	width: 95%;
 	height: 215px;
 	margin-bottom: 10px;
@@ -58,7 +60,7 @@ nav#menu ul{
 	list-style: none;
 	text-transform: uppercase;
 	background-color: #3d63ce;
-	width: 95%;
+	width: 90%;
 	display:flex; 
 	justify-content:space-around;
 	top: 170px;
@@ -83,9 +85,8 @@ footer{
 	display: block;
 	position: relative;
 	border-top: 1px solid black;
-	width: 95%;
+	width: 90%;
 	height: 70px;
-	background-color: #3d63ce;
 	margin: 0px auto 0 auto;
 
 }
