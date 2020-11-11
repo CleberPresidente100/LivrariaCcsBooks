@@ -17,7 +17,7 @@ function GerarBaseDeLivros (){
         autor = "James, Eloisa",
         isbn = "9788580419429",
         categoria = "Romance",
-        descricao = "",
+        descricao = '',
         arquivoImagem = 10,
     
         idioma = "Português",
@@ -35,7 +35,7 @@ function GerarBaseDeLivros (){
         autor = "Crane, Rebekah",
         isbn = "9788595810105",
         categoria = "Romance",
-        descricao = "Sejam bem-vindos ao acampamento Pádua. Um retiro de verão para adolescentes problemáticos. Mas não se tratam de problemas comuns, como não querer estudar, mentir ou colar na prova. Não! Estamos falando de problemas reais. Alguns deles tão grandes, tão sérios, que até um adulto desmoronaria sob o peso deles. No acampamento, Zander, uma garota enviada pelos pais contra a sua vontade, encontra uma série de adolescentes na mesma situação, e com três deles ela estabelece uma relação de amizade — Grover, Alex e Cassie. Todos os quatro são tão diferentes quanto as pessoas podem ser, mas têm algo em comum — eles estão quebrados por dentro. Em meio às sessões de grupo e, à medida em que o verão dá as caras, os quatro revelam seus trágicos segredos. Zander encontra-se atraída pelos encantos de Grover, e então começa a se perguntar, depois de muito tempo, se pode apostar em ser feliz novamente. Mas, antes, ela precisa lidar abertamente com seus problemas, para poder juntar seus pedaços e reconstruir sua vida Você pode pensar que se trata de uma história triste. E há partes duras sim, mas, Rebekah Crane consegue mostrar como na dificuldade podemos encontrar uma saída. Isso é uma das coisas que faz o livro completamente encantador, divertido e doce, capaz de deixar em você um grande sorriso no rosto.",
+        descricao = 'Sejam bem-vindos ao acampamento Pádua. Um retiro de verão para adolescentes problemáticos. Mas não se tratam de problemas comuns, como não querer estudar, mentir ou colar na prova. Não! Estamos falando de problemas reais. Alguns deles tão grandes, tão sérios, que até um adulto desmoronaria sob o peso deles. No acampamento, Zander, uma garota enviada pelos pais contra a sua vontade, encontra uma série de adolescentes na mesma situação, e com três deles ela estabelece uma relação de amizade — Grover, Alex e Cassie. Todos os quatro são tão diferentes quanto as pessoas podem ser, mas têm algo em comum — eles estão quebrados por dentro. Em meio às sessões de grupo e, à medida em que o verão dá as caras, os quatro revelam seus trágicos segredos. Zander encontra-se atraída pelos encantos de Grover, e então começa a se perguntar, depois de muito tempo, se pode apostar em ser feliz novamente. Mas, antes, ela precisa lidar abertamente com seus problemas, para poder juntar seus pedaços e reconstruir sua vida Você pode pensar que se trata de uma história triste. E há partes duras sim, mas, Rebekah Crane consegue mostrar como na dificuldade podemos encontrar uma saída. Isso é uma das coisas que faz o livro completamente encantador, divertido e doce, capaz de deixar em você um grande sorriso no rosto.',
         arquivoImagem = 9,
     
         idioma = "Português",
@@ -574,7 +574,7 @@ function GerarBaseDeLivros (){
     *   Infantil 
     * 
     ***********************************/
-
+/*
     ListaDeLivros.push({
 
         nome = "",
@@ -754,7 +754,7 @@ function GerarBaseDeLivros (){
         precoOriginal = 0,
         precoComDesconto = 0,
     });
-
+*/
 
 
     /***********************************
@@ -762,7 +762,7 @@ function GerarBaseDeLivros (){
     *   Policial 
     * 
     ***********************************/
-
+/*
     ListaDeLivros.push({
 
         nome = "",
@@ -942,7 +942,7 @@ function GerarBaseDeLivros (){
         precoOriginal = 0,
         precoComDesconto = 0,
     });
-
+*/
 
 
     /***********************************
@@ -950,7 +950,7 @@ function GerarBaseDeLivros (){
     *   Modelo 
     * 
     ***********************************/
-
+/*
     ListaDeLivros.push({
 
         nome = "",
@@ -1130,7 +1130,7 @@ function GerarBaseDeLivros (){
         precoOriginal = 0,
         precoComDesconto = 0,
     });
-
+*/
 
 
 
