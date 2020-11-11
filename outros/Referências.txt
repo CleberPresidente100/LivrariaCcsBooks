@@ -9,4 +9,6 @@ JavaScript
         https://www.w3schools.com/jsref/prop_nav_cookieenabled.asp
         https://code2care.org/pages/detect-if-cookies-are-enabled-using-javascript
 
+    Modals -->
+        https://www.w3schools.com/howto/howto_css_modals.asp
     
