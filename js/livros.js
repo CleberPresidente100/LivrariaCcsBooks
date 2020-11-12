@@ -13,7 +13,7 @@ function GetLivro(idLivro){
         var id = item.categoria + item.idImagem;
 
         // Verifica se o id do livro pesquisado é igual ao id do livro que se deseja encontrar.
-        if(id = idLivro){
+        if(id.toUpperCase() = idLivro.toUpperCase()){
             livro = item;
             return;
         }
@@ -34,7 +34,7 @@ function GetAllLivrosCategoria(categoria){
     ListaDeLivros.forEach(function(item){
 
         // Verifica se a categoria pesquisada é igual a categoria que se deseja encontrar.
-        if(item.categoria = categoria){
+        if(item.categoria.toUpperCase() = categoria.toUpperCase()){
             listaDeLivrosCategoria.push(item);
         }
     });
