@@ -1,0 +1,2134 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Compras</title>
+    <link rel="stylesheet" type="text/css" href="..\Compras\compras.css">
+    <script src="..\Compras\compras.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+
+<div id="global">
+    <div id="logo">
+        <b><img class="logo" src="..\Compras\Livraria\logo.png"></img>
+    </div>
+
+
+    <table id="menu">
+        <tr>
+            <li id="menu">
+            <td class="menu">
+                </br><a href="#" id="menu1"><b>Carrinho de compras</b></a>
+                <img id="carrinho" src="..\Compras\Livraria\carrinho.jpg"></img>
+            </td>
+            <td class="menu"><a href="../source/contatocerto.html" id="menu"><b>CONTATO</b></a></td>
+            <td class="menu"><a href="#" id="menu"><b>SOBRE NOS</b></a></td>
+            <td class="menu"><a href="#" id="menu"><b>TODA LOJA</b></a></td>
+
+            </li>
+        </tr>
+    </table>
+</div>
+<div id="global2">
+    <div id="login1">
+        <a href="#" id="login"><b>LOGIN</b></a>
+        <img id="imglogin" src="..\Compras\Livraria\login.jpg"></img>
+    </div>
+    <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="O que você procura?" />
+        <button id="btnBusca">Buscar</button>
+    </div>
+
+</div>
+
+
+<div id="GlobalLivro">
+    <div id="infantil">
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil01.jpg">
+            <div class="imginterna">
+                <p><br>Nome: Pé de pilão</br>De <s> R$ 45,00 </s></br> Por apenas R$27,90</br></p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn" class="comprar" onclick="submenu('myBtn','myModal','close')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil01.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/41LXaaVY5uL._SX313_BO1,204,203,200_.jpg"><b>Link de captura</b></a><br /><b>Data da Captura: 03/11/2020</b>
+                            <p><b>Nome: Pé de pilão</br>Valor: R$27,90</br>Autor: Mário Quintana</br></b></p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil02.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Parabéns Para Você!</br>De <s>49,90</s></br> Por apenas R$ 33,35</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn2" class="comprar" onclick="submenu('myBtn2','myModal2','close2')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal2" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil02.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51Po9xgQPWL._SX497_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: Parabéns Para Você!</br>Valor: R$ 33,35</br>Autor:Nicola Staler</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal2')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil03.jpg">
+            <div class="imginterna">
+                <p>Nome: Sinto o que sinto:e a incrível história de Asta e Jaser</br><s>De: 45,90</s></br> Por apenas R$ 33,92</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn3" class="comprar" onclick="submenu('myBtn3','myModal3','close3')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal3" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil03.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51i-rl1Zk-L._SY498_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: Sinto o que sinto:e a incrível história de Asta e Jaser</br>Valor R$ 33,92 </br>Lázaro Ramos</br></p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal3')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil04.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Turma da Monica Como? Onde? Por Quê?</br>De <s>69,90</s></br> Por apenas R$ 59,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn4" class="comprar" onclick="submenu('myBtn4','myModal4','close4')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal4" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil04.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="http://lojasaraiva.vteximg.com.br/arquivos/ids/12118528/1006577588.jpg?v=637142282255500000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: Turma da Monica Como? Onde? Por Quê?</br>Valor: R$ 59,90</br>Autor:  Camilla de La Bedoyere</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal4')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil05.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Minha Pequena Luz</br>De <s>38,90</s></br> Por apenas R$ 31,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn5" class="comprar" onclick="submenu('myBtn5','myModal5','close5')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal5" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil05.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="http://lojasaraiva.vteximg.com.br/arquivos/ids/12712100/1005620498.jpg?v=637154480160000000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: Minha Pequena Luz</br>Valor: R$ 31,90</br>Autor: Márcia Duarte Companhone</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal5')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil06.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Sob A Luz Do Luar</br>De <s>38,90</s></br> Por apenas R$ 29,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn6" class="comprar" onclick="submenu('myBtn6','myModal6','close6')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal6" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil06.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="http://lojasaraiva.vteximg.com.br/arquivos/ids/12564647/1005388673.jpg?v=637152469916270000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: Minha Pequena Luz</br>Valor: R$ 31,90</br>Autor: Rebecca Harry</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal6')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil07.jpg">
+            <div class="imginterna">
+                <p></br>Nome: O Jardim Secreto</br>De <s>38,90</s></br> Por apenas R$ 36,00</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn7" class="comprar" onclick="submenu('myBtn7','myModal7','close7')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal7" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil07.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="http://lojasaraiva.vteximg.com.br/arquivos/ids/12101495/1009791490.jpg?v=637142219944700000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome:  O Jardim Secreto</br>Valor: R$ 36,00</br>Autor: Frances Hodgson Burnett</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal7')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil08.jpg">
+            <div class="imginterna">
+                <p></br>Nome:  Viagens de Gulliver</br>De <s>38,90</s></br> Por apenas R$ 36,00</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn8" class="comprar" onclick="submenu('myBtn8','myModal8','close8')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal8" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil08.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="http://lojasaraiva.vteximg.com.br/arquivos/ids/12102373/1009793372.jpg?v=637142222654230000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome:  Viagens de Gulliver</br>Valor: R$ 36,00</br>Autor: Jonathan Swif</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal8')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil09.jpg">
+            <div class="imginterna">
+                <p></br>Nome:A Vizinha Antipática que Sabia Matemática</br>De <s>51,90</s></br> Por apenas R$ 34,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn9" class="comprar" onclick="submenu('myBtn9','myModal9','close9')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal9" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil09.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51LC7zPWt8L._SX352_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: A Vizinha Antipática que Sabia Matemática</br>Valor: R$ 36,00</br>Autor: Jonathan Swif</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal9')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Infantil10.jpg">
+            <div class="imginterna">
+                <p></br>Nome:A cor de Coraline</br>De <s>44,90</s></br> Por apenas R$ 33,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn10" class="comprar" onclick="submenu('myBtn10','myModal10','close10')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal10" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Infantil10.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/41aAgj6I-YL._SY498_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Nome: A cor de Coraline</br>Valor: R$ 33,90</br>Autor: Alexandre Rampazo</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal10')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/*CATEGORIA POLICIAL*-->
+    <div id="policial">
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial01.jpg">
+            <div class="imginterna">
+                <p></br>Nome:Operações Especiais de Policiai Judiciaria</br>De <s>44,90</s></br> Por apenas R$ 37,00</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn11" class="comprar" onclick="submenu('myBtn11','myModal11','close11')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal11" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial01.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.br%2FOpera%25C3%25A7%25C3%25B5es-especiais-pol%25C3%25ADcia-judici%25C3%25A1ria-Vicente%2Fdp%2F8542812573&psig=AOvVaw3P5itc3_BWCgoWwHNv1T6k&ust=1604323289661000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjp6tS64ewCFQAAAAAdAAAAABAD"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p> O que recentes atentados terroristas na Europa têm em comum com as rotineiras ondas de ataque praticadas por facções criminosas no Brasil</p>
+                            <p>Nome: Operações Especiais de Policiai Judiciaria</br>Valor: R$ 37,00</br>Autor: Élzio Vicente da Silva </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal11')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial02.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Diario de um Policial </br>De <s>44,90</s></br> Por apenas R$ 37,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn12" class="comprar" onclick="submenu('myBtn12','myModal12','close12')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal12" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial02.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F61mMibWzgyL.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com.br%2FDi%25C3%25A1rio-Policial-Submundo-Narrado-Comandante%2Fdp%2F8542206452&tbnid=c_NRFfVKU0mF5M&vet=12ahUKEwjZ_aiQ_uTsAhWtNLkGHZceA6QQMygAegUIARCMAQ..i&docid=YjBqTe_PgvJkQM&w=539&h=1000&q=diario%20de%20um%20policial&ved=2ahUKEwjZ_aiQ_uTsAhWtNLkGHZceA6QQMygAegUIARCMAQ"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p> Um “tropa de elite” de verdade Pouca gente no Brasil conhece a mente e o comportamento de um bandido tão bem quanto o tenente-coronel Diógenes Lucca</p>
+                            <p>Nome: Diario de um Policial </br>Valor: R$ 37,90</br>Autor:Díogenes Lucca </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal12')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial03.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Atividade Policial </br>De <s>102,90</s></br> Por apenas R$ 84,15</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn13" class="comprar" onclick="submenu('myBtn13','myModal13','close13')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal13" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial03.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/41nj1CTxKVL._SX345_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>
+                                A Editora Impetus tem a satisfação de publicar a 10ª edição de Atividade Policial: Aspectos Penais, Processuais Penais, Administrativos e Constitucionais, mais uma grande
+                                obra do autor Rogério Greco que, nela, discute temas até então deixados de lado pela doutrina, mas que dizem respeito, diretamente, ao dia a dia do policial
+                            </p>
+                            <p>Nome:  Atividade Policial </br>Valor: R$ 84,15</br>Autor: Rogério Greco </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal13')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial04.jpg">
+            <div class="imginterna">
+                <p></br>Inteligência Policial Judiciaria </br>De <s>74,90</s></br> Por apenas R$ 55,00</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn14" class="comprar" onclick="submenu('myBtn14','myModal14','close14')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal14" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial04.jpg"></div>
+
+                        <div class="modal-content">
+                            <div id="inforB" class="informacoes">
+                                <a href="https://cienciamodernaonline.vteximg.com.br/arquivos/ids/169843-500-500/Judiciario.jpg?v=637045051416970000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                                <p> O que recentes atentados terroristas na Europa têm em comum com as rotineiras ondas de ataque praticadas por facções criminosas no Brasil</p>
+                                <p>Nome: Inteligência Policial Judiciaria </br>Valor: R$ 55,00</br>Autor: Romano Costa</p>
+
+                            </div>
+                            <div>
+                            </div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal14')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial05.jpg">
+            <div class="imginterna">
+                <p></br>Nome:Sniper de Elite </br>De <s>59,90</s></br> Por apenas R$ 44,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn15" class="comprar" onclick="submenu('myBtn15','myModal15','close15')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal15" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial05.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/91utvpTqezL._AC_UL320_SR218,320_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>
+                                Descrição do Livro : O herói americano e atirador de elite da Equipe SEAL, Gil Shannon, se une a um aliado improvável a fim de impedir uma
+                                conspiração terrorista disposta a destruir a Europa. Perseguindo o 'Lobo', um sniper do exército russo que se tornou terrorista checheno,
+                                Gil passa de caçador a caçado quando sua missão é exposta por um traidor do governo americano, obrigando Shannon a recorrer a um aliado improvável -
+                                um agente especial russo - para equilibrar a situação.
+                            </p>
+                            <p>Nome: Sniper de Elite </br>Valor: R$ 44,90</br>Autor: Scott Mcewem, Thomas Koloniar</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal15')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial06.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Vá e Venca : Desafiando a Tropa de Elite </br>De <s>39,90</s></br> Por apenas R$ 28,99</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn16" class="comprar" onclick="submenu('myBtn16','myModal16','close16')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal16" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial06.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://m.media-amazon.com/images/I/41Ky36Yw9eL.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>
+                                Aprenda a formar equipes de elite e alta performance com o ex-capitão e coordenador do Curso de Operações do Bope Paulo Storani.
+                                A carreira de Paulo Storani na Polícia Militar foi marcada pela ética e pelo respeito aos direitos humanos
+                            </p>
+                            <p>Nome:  Vá e Venca : Desafiando a Tropa de Elite </br>Valor: R$ 28,99</br>Autor:  Paulo Storani  </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal16')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial07.jpg">
+            <div class="imginterna">
+                <p></br>Nome:O ultimo policial </br>De <s>32,90</s></br> Por apenas R$ 28,99</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn17" class="comprar" onclick="submenu('myBtn17','myModal17','close17')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal17" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial07.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/819hBACkxEL.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>Qual o sentido de se investigar um crime quando o planeta tem apenas seis meses de vida? O detetive Hank Palace enfrenta essa questão desde que o asteroide 2011GV1 foi avistado em rota de colisão com a Terra.</p>
+                            <p>Nome:O ultimo policial </br>Valor: R$ 28,99</br>Autor: Ben H. Winters  </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal17')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial08.jpg">
+            <div class="imginterna">
+                <p></br>Nome:Rota 66 : A história da policia que mata</br>De <s>49,90</s></br> Por apenas R$ 55,99</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn18" class="comprar" onclick="submenu('myBtn18','myModal18','close18')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal18" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial08.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/91FehfdO9FL.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p> O jornalista Caco Barccelos investigou 5 anos o esquadrão da morte que age na cidade de são paulo.Ele mostra como é o sistema do grupo de extermínio e seus metodos de atuação.</p>
+                            <p>Nome:Rota 66 : A história da policia que mata</br>Valor: R$ 55,99</br>Autor: Caco Barccelos  </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal18')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial09.jpg">
+            <div class="imginterna">
+                <p></br>Nome:Caveiras : Toda tropa tem seus segredos</br>De <s>44,90</s></br> Por apenas R$ 35,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn19" class="comprar" onclick="submenu('myBtn19','myModal19','close19')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal19" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial09.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/81kpKuMpkVL.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>
+                                “O menino correu pelas ruas escuras da favela olhando a todo momento para trás. Seus perseguidores gritavam para que parasse, mas ele sabia que não deveria.
+                                Talvez conseguisse chegar à sua casa se tivesse sorte. Era sua única chance. Em sua ingenuidade infantil, esperava que a mãe o protegesse”.
+                            </p>
+                            <p>Nome: Caveiras : Toda tropa tem seus segredos</br>Valor: R$ 35,90</br>Autor:  Vitor Abdala</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal19')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Policial10.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Quem matou o livro policial?</br>De <s>19,90</s></br> Por apenas R$ 9,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn20" class="comprar" onclick="submenu('myBtn20','myModal20','close20')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal20" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Policial10.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/81vw+EsllKL.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>
+                                Um divertido thriller sobre detetives, assassinatos e sobre como escrever um romance policial. Imagine um serial killer em atividade há 130 anos?
+                                Agora um Gabinete de Leitura que oculta o maior mistério já investigado por qualquer detetive das novelas policiais?
+                                Mas o que tem isso a ver com o assassinato a sangue frio do último livro de Raven Hastings, cometido na Capital Brasileira da Literatura? Afinal, quem matou o livro policial
+                            </p>
+                            <p>Nome: Quem matou o livro policial?</br>Valor: R$ 9,90</br>Autor: Élzio Vicente da Silva </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal20')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CATEGORIA ROMANCE -->
+    <div id="romance">
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance1.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Teto Para Dois</br>De <s>49,9</s></br> Por apenas R$ 42,9</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn21" class="comprar" onclick="submenu('myBtn21','myModal21','close21')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal21" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance1.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/12116684/1008621055.jpg?v=637142276228730000"><p>Link de captura</p></a><br /><p>Data da Captura: 03/11/2020</p>
+                            <p>
+                            </p>
+                            <p>Nome: Teto Para Dois</br>Valor: R$ 9,90</br>Autor: O'leary, Beth</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal21')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance2.jpg">
+            <div class="imginterna">
+                <p></br>Nome: História De Um Grande Amor</br>De <s>49,9</s></br> Por apenas R$ 42,9</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn22" class="comprar" onclick="submenu('myBtn22','myModal22','close22')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal22" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance2.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/12914116/1010067371.jpg?v=637160076350000000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                PRIMEIRO VOLUME DA TRILOGIA BEVELSTOKE. Julia Quinn já vendeu mais 1 milhão de livros pela Editora Arqueiro. “O timing perfeito de Julia Quinn para o humor permanece intacto.
+                                Este romance bem-escrito, divertido e delicado é diversão garantida.” – Publishers Weekly Aos 10 anos, Miranda Cheever já dava sinais claros de que não seria nenhuma bela dama.
+                                E já nessa idade, aprendeu a aceitar o destino de solteirona que a sociedade lhe reservava. Até que, numa tarde qualquer, Nigel Bevelstoke, o belo e atraente visconde de Turner,
+                                beijou solenemente sua mãozinha e lhe prometeu que, quando ela crescesse, seria tão bonita quanto já era inteligente. Nesse momento, Miranda não só se apaixonou, como teve certeza
+                                de que amaria aquele homem para sempre. Os anos que se seguiram foram implacáveis com Nigel e generosos com Miranda. Ela se tornou a mulher linda e interessante que o visconde previu
+                                naquela tarde memorável, enquanto ele virou um homem solitário e amargo, como consequência de um acontecimento devastador. Mas Miranda nunca esqueceu a verdade que anotou em seu diário
+                                tantos anos antes. E agora ela fará de tudo para salvar Nigel da pessoa que ele se tornou e impedir que seu grande amor lhe escape por entre os dedos.
+                            </p>
+                            <p>Nome: História De Um Grande Amor</br>Valor: R$ 9,90</br>Autor: Quinn, Julia </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal22')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance3.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Como Eu Era Antes de Você</br>De <s>44,90</s></br> Por apenas R$ 36,9</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn21" class="comprar" onclick="submenu('myBtn23','myModal23','close23')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal23" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance3.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://www.saraiva.com.br/como-eu-era-antes-de-voce-4889143/p"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Aos 26 anos, Louisa Clark não tem muitas ambições. Ela mora com os pais, a irmã mãe solteira, o sobrinho pequeno e um avô que precisa de cuidados constantes desde que sofreu um derrame.
+                                Trabalha como garçonete num café, um emprego que não paga muito, mas ajuda nas despesas, e namora Patrick, um triatleta que não parece interessado nela. Não que ela se importe.
+                                Quando o café fecha as portas, Lou é obrigada a procurar outro emprego. Sem muitas qualificações, consegue trabalho como cuidadora de um tetraplégico. Will Traynor, de 35 anos,
+                                é inteligente, rico e mal-humorado. Preso a uma cadeira de rodas depois de um acidente de moto, o antes ativo e esportivo Will desconta toda a sua amargura em quem estiver por perto. Tudo parece pequeno e sem graça para ele,
+                                que sabe exatamente como dar um fim a esse sentimento. O que Will não sabe é que Lou está prestes a trazer cor a sua vida. E nenhum dos dois desconfia de que irá mudar para sempre a história um do outro.
+                            </p>
+                            <p>Nome: Como Eu Era Antes de Você</br>Valor: R$ 36,9</br>Autor: Moyes, Jojo </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal23')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance4.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Um Amor Para Recordar</br>De <s>39,90</s></br> Por apenas R$ 27,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn24" class="comprar" onclick="submenu('myBtn24','myModal24','close24')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal24" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance4.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/12115744/1008011865.jpg?v=637142272802400000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                            </p>
+                            <p>Nome: Um Amor Para Recordar</br>Valor: R$ 27,90</br>Autor: Sparks, Nicholas</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal24')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance5.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Filha Do Conde</br>De <s>49,9</s></br> Por apenas R$ 39,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn25" class="comprar" onclick="submenu('myBtn25','myModal25','close25')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal25" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance5.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/13137514/1010066406.jpg?v=637166479080600000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                “Era revoltante ver que ela estava ainda mais bonita do que quando a vira pela última vez, quando trocaram juras de amor e fizeram promessas que foram quebradas poucas horas depois…
+                                Os anos e a maturidade tinham acrescentado uma graça que Lavínia não possuía aos 17, quando Finn declarara o seu amor.Será que ela ainda se lembrava dos momentos com carinho ou a memória
+                                também rasgava seu coração, como fazia com o dele? Lavínia o fizera de tolo. Nenhuma das lembranças que tinha dela deveriam ser agradáveis. Mas, em algumas noites, ainda ficava na cama encarando
+                                o teto, porque a imagem dela surgia sempre que fechava os olhos.Cinco anos de sua vida em isolamento, e a única coisa para lhe fazer companhia, para mantê-lo são, era a lembrança que tinha dela.
+                                Aquelas memórias eram seu sustento. No começo, ele as invocava para alimentar a sede de vingança, de retribuição, mas a solidão fora aumentando até transformá-las em sonhos. As lembranças traziam a
+                                esperança de que o amor estaria esperando em algum lugar, que voltaria a tê-la, sorrindo para ele, rindo com ele, enchendo-o de alegria. Lavínia não era mais sua - na verdade, nunca fora - mas, ainda assim,
+                                uma parte tola de si não conseguia se esquecer de quando quase a tivera, aquela garota que amara no passado.”
+                            </p>
+                            <p>Nome: Teto Para Dois</br>Valor: R$ 39,90</br>Autor: Heath, Lorraine </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal25')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance6.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Almas Gêmeas - Por Quanto Tempo Um Sonho Consegue Sobreviver?</br>De <s>44,90</s></br> Por apenas R$ 37,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn26" class="comprar" onclick="submenu('myBtn26','myModal26','close26')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal26" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance6.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/17801601/1010371560.jpg?v=637217992471400000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Novo romance de Nicholas Sparks. Traduzidos para 50 idiomas, os livros de Nicholas Sparks já venderam mais de 100 milhões de livros no mundo.
+                                Hope Anderson está numa encruzilhada. Aos 36 anos, ela namora o mesmo homem há seis, sem perspectiva de casamento. Quando seu pai é diagnosticado com ELA,
+                                Hope resolve passar uma semana na casa de praia da família, na Carolina do Norte, para pensar nas difíceis decisões que precisa tomar em relação ao próprio futuro.
+                                Tru Walls nasceu numa família rica no Zimbábue. Nunca esteve nos Estados Unidos, até receber uma carta de um homem que diz ser seu pai biológico, convidando-o a
+                                encontrá-lo numa casa de praia na Carolina do Norte. Intrigado ele aceita e faz a viagem. Quando os dois estranhos se cruzam na praia, nasce entre eles uma ligação
+                                eletrizante e imediata. Nos dias que se seguem, os sentimentos que desenvolvem um pelo outro os obrigam a fazer escolhas que colocam à prova suas lealdades e reais
+                                chances de felicidade. O novo romance de Nicholas Sparks, na tradição de Diário de uma Paixão e Noites de Tormenta, aborda as muitas facetas do amor,
+                                os arrependimentos e a esperança que nunca morre, trazendo à tona a pergunta: por quanto tempo um sonho consegue sobreviver?
+                            </p>
+                            <p>Nome: Almas Gêmeas - Por Quanto Tempo Um Sonho Consegue Sobreviver?</br>Valor: R$ 37,90</br>Autor: Sparks, Nicholas </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal21')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance7.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Já Disse Que Te Amo?</br>De <s>39,90</s></br> Por apenas R$ 27,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn27" class="comprar" onclick="submenu('myBtn27','myModal27','close27')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal27" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance7.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/17801605/1010144647.jpg?v=637217993116600000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                PRIMEIRO VOLUME DA TRILOGIA JÁ DISSE QUE TE AMO. Romance, lealdade e drama em uma trilogia que envolve o leitor desde a primeira pa´gina. “As consequências de um divórcio,
+                                os segredos de família e, principalmente, as dores do primeiro amor conduzem esta história sobre amadurecimento, vibrante de emoções.” – Publishers Weekly “Um livro forte,
+                                com uma irresistível pitada de amor proibido.” – Booklist Três verões inesquecíveis de segredos, mágoas e amores proibidos e avassaladores. Eden Munro foi para a Califórnia
+                                aproveitar o sol, as praias e celebridades. Seria um verão maravilhoso se ela não tivesse que conhecer sua nova família, repleta de estranhos: um pai que não vê há três anos,
+                                uma madrasta simpática até demais e três irmãos postiços. Na casa chique, ela vai ter que ficar bem ao lado do quarto de Tyler Bruce, o mais velho dos irmãos. Ele tem olhos
+                                verdes que transbordam raiva e sarcasmo, um ego maior que uma mansão de Beverly Hills e cara de poucos amigos. Eden nunca tinha conhecido alguém tão desagradável e tão...
+                                intrigante. Aos poucos, Eden tenta entender o que faz de Tyler uma pessoa tão envolvente quanto o clima da Califórnia. Em meio às festas e às novas amizades, ela
+                                percebe que está se apaixonando pela única pessoa que não deveria. Já disse que te amo? é o primeiro livro da trilogia de Estelle Maskame, que teve mais de 4 milhões de acessos no Wattpad.
+                            </p>
+                            <p>Nome: Já Disse Que Te Amo?</br>Valor: R$ 27,90</br>Autor: Maskame, Estelle </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal27')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance8.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Dama Mais Apaixonada</br>De <s>39,90</s></br> Por apenas R$ 27,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn28" class="comprar" onclick="submenu('myBtn28','myModal28','close28')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal28" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance8.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/12116621/1008559664.jpg?v=637142276002630000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                SEGUNDO VOLUME DA DUOLOGIA "A DAMA MAIS...". A dama mais apaixonada é uma história contada em três partes, repleta de diálogos espirituosos,
+                                conspirações e romances improváveis. “Leitura obrigatória para fãs de romances de época.” – Kirkus Reviews “Rico em inteligência e romantismo,
+                                A dama mais apaixonada é um livro inestimável.” – Booklist Três estrelas do Romance de Época se unem para transportar você a um mundo de tentação,
+                                paixão e amores inesperados Quando os sobrinhos do proprietário de terras escocês Taran Ferguson se recusam a se casar para dar continuidade à linhagem da família,
+                                ele decide cuidar pessoalmente da questão e arranjar uma esposa para pelo menos um dos dois. Numa noite de festa, Taran invade um castelo e sequestra quatro damas:
+                                uma linda e ousada donzela, uma herdeira com uma pequena mancha na reputação, uma bela e rica inglesa e uma jovem sem sobrenome tradicional ou fortuna. Uma delas certamente
+                                se apaixonará por um lorde escocês. Resta saber se, em meio à fúria de um duque sequestrado por engano, um castelo decrépito e uma tempestade violenta que não vai permitir
+                                que ninguém vá embora tão cedo,
+                                haverá espaço para que um amor floresça.
+                            </p>
+                            <p>Nome: A Dama Mais Apaixonada</br>Valor: R$ 27,90</br>Autor: Quinn, Julia - James, Eloisa - Brockway, Connie </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal28')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance9.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Contra Todas As Probabilidades Do Amor</br>De <s>39,90</s></br> Por apenas R$ 16,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn29" class="comprar" onclick="submenu('myBtn29','myModal29','close29')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal29" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance9.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/12111630/1006545610.jpg?v=637142257832070000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Sejam bem-vindos ao acampamento Pádua. Um retiro de verão para adolescentes problemáticos. Mas não se tratam de problemas comuns, como não querer estudar,
+                                mentir ou colar na prova. Não! Estamos falando de problemas reais. Alguns deles tão grandes, tão sérios, que até um adulto desmoronaria sob o peso deles.
+                                No acampamento, Zander, uma garota enviada pelos pais contra a sua vontade, encontra uma série de adolescentes na mesma situação, e com três deles ela estabelece
+                                uma relação de amizade — Grover, Alex e Cassie. Todos os quatro são tão diferentes quanto as pessoas podem ser, mas têm algo em comum — eles estão quebrados por dentro.
+                                Em meio às sessões de grupo e, à medida em que o verão dá as caras, os quatro revelam seus trágicos segredos. Zander encontra-se atraída pelos encantos de Grover, e então
+                                começa a se perguntar, depois de muito tempo, se pode apostar em ser feliz novamente. Mas, antes, ela precisa lidar abertamente com seus problemas, para poder juntar seus
+                                pedaços e reconstruir sua vida Você pode pensar que se trata de uma história triste. E há partes duras sim, mas, Rebekah Crane consegue mostrar como na dificuldade podemos
+                                encontrar uma saída. Isso é uma das coisas que faz o livro
+                                completamente encantador, divertido e doce, capaz de deixar em você um grande sorriso no rosto.
+                            </p>
+                            <p>Nome: Contra Todas As Probabilidades Do Amor</br>Valor: R$ 16,90</br>Autor: Crane, Rebekah </p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal29')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\Romance10.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Esse Duque é Meu</br>De <s>44,90</s></br> Por apenas R$ 31,40</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn30" class="comprar" onclick="submenu('myBtn30','myModal30','close30')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal30" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\Romance10.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://lojasaraiva.vteximg.com.br/arquivos/ids/12114967/1007215600.jpg?v=637142269791470000"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                            </p>
+                            <p>Nome: Contra Todas As Probabilidades Do Amor</br>Valor: R$ 31,40</br>Autor: James, Eloisa</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal30')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Aventura">
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura61.jpg">
+            <div class="imginterna">
+                <p></br>Nome: As Aventuras de Mike</br>De <s>24,90</s></br> Por apenas R$ 19,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn31" class="comprar" onclick="submenu('myBtn31','myModal31','close31')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal31" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura61.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://books.google.com.br/books/about/As_aventuras_de_Mike.html?id=PGKtDwAAQBAJ&source=kp_book_description&redir_esc=y"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Sabe aquele garoto popular da escola? Que é descolado se veste bem e faz sucesso com as garotas? Pois é, esse com certeza não é o Mike.
+                                Na verdade, o Mike é exatamente o contrário de tudo isso! Ele é desastrado, prefere videogames e salgadinhos no lugar de futebol,
+                                e é PÉSSIMO com as garotas. Ao lado do seu fiel amigo Nando (que é o ser humano mais distraído do planeta Terra) vão se aventurar
+                                em uma competição de biscoitos em busca de um misterioso prêmio que irá mudar
+                                suas vidas para sempre. "Este é o melhor livro de todos os tempos". Mike
+                            </p>
+                            <p>Nome: As Aventuras de Mike</br>Valor: R$ 19,90</br>Autor: Gabriel Dearo, Manu Digilio</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal31')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura62.jpg">
+            <div class="imginterna">
+                <p></br>Nome: As Aventuras de Sherlock Holmes</br>De <s>24,90</s></br> Por apenas R$ 19,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn32" class="comprar" onclick="submenu('myBtn32','myModal32','close32')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal32" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura62.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images.app.goo.gl/rZcRqjzhMa8W5u5t8"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p> </p>
+                            <p>Nome: As Aventuras de Mike</br>Valor: R$ 19,90</br>Autor: Mark Twain</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal32')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura63.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Rainha Vermelha</br>De <s>29,90</s></br> Por apenas R$ 25,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn33" class="comprar" onclick="submenu('myBtn33','myModal33','close33')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal33" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura63.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images.app.goo.gl/62iGsRiKjLrkaS2U6"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                O mundo de Mare Barrow é dividido pelo sangue: vermelho ou prateado. Mare e sua família são vermelhos: plebeus, humildes,
+                                destinados a servir uma elite prateada cujos poderes sobrenaturais os tornam quase deuses.
+                            </p>
+                            <p>Nome: A Rainha Vermelha</br>Valor: R$ 25,90</br>Autor:  Victoria Aveyard</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal33')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura64.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Jogador Nº 1</br>De <s>29,90</s></br> Por apenas R$ 25,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn34" class="comprar" onclick="submenu('myBtn34','myModal34','close34')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal34" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura64.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images.app.goo.gl/56USgiFBrheR2djr5"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                O livro conta a história de Wade Watts, um jovem que passa, como a maioria das pessoas no ano 2044, a maior parte do seu tempo no OASIS,
+                                um mundo virtual criado por James Halliday. No OASIS, todos podem ser o que quiserem e viver as suas vidas sem as limitações do mundo real.
+                            </p>
+                            <p>Nome: Jogador Nº 1</br>Valor: R$ 25,90</br>Autor:  Victoria Aveyard</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal34')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura65.jpg">
+            <div class="imginterna">
+                <p></br>Nome: As Aventuras Na Netoland Com Luccas Neto</br>De <s>29,90</s></br> Por apenas R$ 18,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn35" class="comprar" onclick="submenu('myBtn35','myModal35','close35')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal35" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura65.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images.app.goo.gl/Jv8ZboAYnTeVKFCX9"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Com mais de 13 milhões de inscritos em seu canal, Luccas Neto é um fenômeno entre a criançada e faz muito sucesso com os seus vídeos na internet. Aventuras na Netoland com
+                                Lucas Neto marca a estreia do youtuber no universo editorial e vem como uma alternativa de entretenimento para o seu público fora do mundo digital.
+                            </p>
+                            <p>Nome: As Aventuras Na Netoland Com Luccas Neto</br>Valor: R$ 18,90</br>Autor:  Luccas Neto</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal35')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura66.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Die Unendliche Geschichte</br>De <s>R$ 99,90</s></br> Por apenas R$ 84,50</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn36" class="comprar" onclick="submenu('myBtn36','myModal36','close36')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal36" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura66.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images.app.goo.gl/JcgUJDTfvcFdypwk6"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                            </p>
+                            <p>Nome: Die Unendliche Geschichte</br>Valor: R$ 84,50</br>Autor: Michael Ende</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal36')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura67.jpg">
+            <div class="imginterna">
+                <p></br>Nome: As Aventuras de Sherlock Holmes</br>De <s>R$ 34,90</s></br> Por apenas R$ 27,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn37" class="comprar" onclick="submenu('myBtn37','myModal37','close37')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal37" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura67.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images.app.goo.gl/TEomXMjeSLpEmy3m8"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Essa luxuosa edição de bolso de As aventuras de Sherlock Holmes
+                            </p>
+                            <p>Nome: As Aventuras de Sherlock Holmes</br>Valor: R$ 27,90</br>Autor: Arthur Conan Doyle</p>
+
+                        </div>
+                        <div>
+
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal37')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura68.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Viajante do Tempo</br>De <s>R$ 44,90</s></br> Por apenas R$ 39,89 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn38" class="comprar" onclick="submenu('myBtn38','myModal38','close38')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal38" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura68.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGRPcmSKCEUaX5spUPH2g8Y-dWEsHtHmTV41SyHyWavR80YCt"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                Claire Beauchamp Randall foi separada de seu marido Frank pouco depois da lua-de-mel, quando ele foi convocado para lutar na Segunda Guerra Mundial.
+                                Ao final do conflito, Claire e Frank se reencontram e retomam a vida que tinham em comum numa viagem a Escócia.
+                            </p>
+                            <p>Nome: A Viajante do Tempo</br>Valor: R$ 39,89</br>Autor: Arthur Conan Doyle</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal38')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura69.jpg">
+            <div class="imginterna">
+                <p></br>Nome: The Amber Spyglass</br>De <s>R$ 49,90</s></br> Por apenas R$ 42,89 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn39" class="comprar" onclick="submenu('myBtn39','myModal39','close39')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal39" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura68.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdldTtKzrzrpWE2PZmaxPpS1CcPoImxB6KMh4oy_EaJ46iY8bK"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                            </p>
+                            <p>Nome: The Amber Spyglass</br>Valor: R$ 42,89</br>Autor:Philip Pullman</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal39')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\aventura70.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn40" class="comprar" onclick="submenu('myBtn40','myModal40','close40')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal40" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\aventura70.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                            canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade. 
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal40')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="terror">
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR51.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn51" class="comprar" onclick="submenu('myBtn51','myModal51','close51')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal51" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR51.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal51')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR52.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn52" class="comprar" onclick="submenu('myBtn52','myModal52','close52')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal52" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR52.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal52')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR53.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn53" class="comprar" onclick="submenu('myBtn53','myModal53','close53')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal53" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR53.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal53')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR54.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn54" class="comprar" onclick="submenu('myBtn54','myModal54','close54')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal54" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR54.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal54')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR55.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn55" class="comprar" onclick="submenu('myBtn55','myModal55','close55')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal55" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR55.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal55')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR56.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn56" class="comprar" onclick="submenu('myBtn40','myModal56','close56')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal56" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR56.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal56')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR57.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn57" class="comprar" onclick="submenu('myBtn57','myModal57','close57')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal57" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR57.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal57')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR58.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn58" class="comprar" onclick="submenu('myBtn58','myModal58','close58')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal58" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR58.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal58')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR59.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn59" class="comprar" onclick="submenu('myBtn59','myModal59','close59')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal59" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR59.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal59')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\TERROR60.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A grande aventura de Maria Fumaça</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn60" class="comprar" onclick="submenu('myBtn60','myModal60','close60')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal60" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\TERROR60.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51cw0PV1yUL._SX342_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 02/11/2020</p>
+                            <p>
+                                A locomotiva Maria Fumaça que, em outros tempos, viajara muito pelo Brasil, estava cansada de ficar parada. Sentia-se solitária, enferrujada, abandonada em um
+                                canto da estação. Um dia, então, ela convida Zé Pretinho, um vagãozinho de carregar carvão, e Beltrão, um velho vagão de carregar bois, para uma aventura: atravessar vales, serras e chegar à cidade.
+
+                            </p>
+                            <p>Nome: A grande aventura de Maria Fumaça</br>Valor: R$ 29,50</br>Autor: Ana Maria Machado</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal60')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ficcao">
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao01.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Máquina do Tempo: Uma Invenção</br>De <s>R$ 39,90</s></br> Por apenas R$ 29,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn61" class="comprar" onclick="submenu('myBtn61','myModal61','close61')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal61" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao01.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51jmxWopwXL._SX331_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Publicado em 1895, A Máquina do Tempo é considerado um dos primeiros romances a tratar do conceito de viagem no tempo.
+                                O personagem central, um cientista apresentado na trama apenas como o Viajante do Tempo, constrói uma máquina capaz de viajar
+                                pela quarta dimensão. Ao testá-la, é transportado para o ano de 802.701, em um mundo povoado pelos pacíficos elóis. Mas os elóis
+                                não são os únicos habitantes dessa nova Terra, e o Viajante do Tempo terá de enfrentar os morlocks,
+                                seres que vivem nos subterrâneos e guardam um importante segredo sobre o destino da humanidade.
+                            </p>
+                            <p>Nome: A Máquina do Tempo: Uma Invenção</br>Valor: R$ 29,50</br>Autor: H.G Wells</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal61')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao02.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Garota Do Lago</br>De <s>R$ 19,90</s></br> Por apenas R$ 12,90 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn62" class="comprar" onclick="submenu('myBtn62','myModal62','close62')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal62" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao01.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-americanas.b2w.io/produtos/imagens/130884182/130884191_1GG.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas à beira de um longo trecho de água intocada.
+                                Duas semanas atrás, a estudante de direito Becca Eckersley foi brutalmente assassinada em uma dessas casas. Filha de um poderoso advogado, Becca estava no auge de sua vida.
+                                Atraída instintivamente pela notícia, a repórter Kelsey Castle vai até a cidade para investigar o caso. ...E LOGO SE ESTABELECE UMA CONEXÃO ÍNTIMA QUANDO UM VIVO CAMINHA
+                                NAS MESMAS PEGADAS DOS MORTOS...E enquanto descobre sobre as amizades de Becca, sua vida amorosa e os segredos que ela guardava, a repórter fica cada vez mais convencida de que a verdade
+                                sobre o que aconteceu com Becca pode ser a chave para superar as marcas sombrias de seu próprio passado.
+                            </p>
+                            <p>Nome: A Garota Do Lago</br>Valor: R$ 29,50</br>Autor: Charlie Donlea</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal62')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao03.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Caixa de passaros: Não abra os olhos</br>De <s>R$ 19,90</s></br> Por apenas R$ 10,90 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn63" class="comprar" onclick="submenu('myBtn63','myModal63','close63')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal63" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao03.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-americanas.b2w.io/produtos/01/00/item/132513/7/132513764_1GG.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Romance de estreia de Josh Malerman, Caixa de Pássaros é um thriller psicológico tenso e aterrorizante, que explora a essência do medo.
+                                Uma história que vai deixar o leitor completamente sem fôlego mesmo depois de terminar de ler. Basta uma olhadela para desencadear um impulso
+                                violento e incontrolável que acabará em suicídio. Ninguém é imune e ninguém sabe o que provoca essa reação nas pessoas. Cinco anos depois do surto
+                                ter começado, restaram poucos sobreviventes, entre eles Malorie e dois filhos pequenos. Ela sonha em fugir para um local onde a família possa
+                                ficar em segurança, mas a viagem que tem pela frente é assustadora: uma decisão errada e eles morrerão.
+                            </p>
+                            <p>Nome: Caixa de passaros: Não abra os olhos</br>Valor: R$ 10,99</br>Autor: Josh Malerman</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal63')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao04.jpg">
+            <div class="imginterna">
+                <p></br>Nome: O homem de giz</br>De <s>R$ 49,90</s></br> Por apenas R$ 34,99 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn64" class="comprar" onclick="submenu('myBtn64','myModal64','close64')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal64" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao04.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://www.webcontinental.com.br//ccstore/v1/images/?source=/file/v4599399564453252825/products/226009.MKP000553001089-livro-o-homem-de-giz-c-j-tudor-intrinsica_6829.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Romance de estreia de Josh Malerman, Caixa de Pássaros é um thriller psicológico tenso e aterrorizante, que explora a essência do medo.
+                                Uma história que vai deixar o leitor completamente sem fôlego mesmo depois de terminar de ler. Basta uma olhadela para desencadear um impulso
+                                violento e incontrolável que acabará em suicídio. Ninguém é imune e ninguém sabe o que provoca essa reação nas pessoas. Cinco anos depois do surto
+                                ter começado, restaram poucos sobreviventes, entre eles Malorie e dois filhos pequenos. Ela sonha em fugir para um local onde a família possa
+                                ficar em segurança, mas a viagem que tem pela frente é assustadora: uma decisão errada e eles morrerão.
+                            </p>
+                            <p>Nome: Caixa de passaros: Não abra os olhos</br>Valor: R$ 34,99</br>Autor: C. J. Tudor</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal64')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao05.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Sherlock Holmes - Casos Extraordinários</br>De <s>R$ 34,90</s></br> Por apenas R$ 29,89 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn65" class="comprar" onclick="submenu('myBtn65','myModal65','close65')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal65" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao05.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://http2.mlstatic.com/D_NQ_NP_986849-MLB28823350586_112018-O.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Esse volume reúne contos em que Sherlock demonstra seus métodos. Em A face amarela, Sherlock atende um homem com dúvidas sobre sua esposa. O ritual Musgrave apresenta um dos primeiros casos
+                                resolvidos por Sherlock, envolvendo um mapa do tesouro e estranhos desaparecimentos. A Liga dos Cabeças-Vermelhas trata de uma curiosa organização, que contratava apenas homens ruivos.
+                                O diamante azul começa com um ganso roubado e termina com..., bom, é preciso ler para conhecer essa estranha forma de praticar um roubo. As histórias apresentadas neste livro são de fácil leitura,
+                                o que permite ao jovem leitor acompanhar o método Holmes e entender o fascínio que esse personagem extraordinário tem exercido durante todos esses anos. Tradução e adaptação - Marcia Kupstas -
+                                Marcia ama as histórias. A partir de 1986 começou na carreira de escritora e hoje tem mais de 70 livros publicados, boa parte
+                                deles para jovens.
+                            </p>
+                            <p>Nome: Sherlock Holmes - Casos Extraordinários</br>Valor: R$ 47,00</br>Autor: Doyle, Arthur Conan</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal65')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao06.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A cabana</br>De <s>R$ 54,90</s></br> Por apenas R$ 47,00 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn66" class="comprar" onclick="submenu('myBtn66','myModal66','close66')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal66" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao06.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://www.extra-imagens.com.br/livros/LivrodeLiteraturaEstrangeira/Romance/13636382/1020258301/livro-a-cabana-13636382.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Esta história deve ser lida como se fosse uma oração – a melhor forma de oração, cheia de ternura, amor, transparência e surpresas.
+                                Se você tiver que escolher apenas um livro de ficção para ler este ano, leia A cabana." - Michael W. Smith Publicado nos Estados Unidos
+                                por uma editora pequena, A cabana se revelou um desses livros raros que, através do entusiasmo e da indicação dos leitores, se torna um
+                                fenômeno de público – já são quase dois milhões de exemplares vendidos – e de imprensa. Durante uma viagem de fim de semana, a filha mais
+                                nova de Mack Allen Phillips é raptada e evidências de que ela foi brutalmente assassinada são encontradas numa cabana abandonada.
+                                Após quatro anos vivendo numa tristeza profunda causada pela culpa e pela saudade da menina, Mack recebe um estranho bilhete,
+                                aparentemente escrito por Deus, convidando-o para voltar à cabana onde aconteceu a tragédia. Apesar de desconfiado, ele vai ao
+                                local do crime numa tarde de inverno e adentra passo a passo no cenário de seu mais terrível pesadelo. Mas o que ele encontra lá
+                                muda o seu destino para sempre. Em um mundo tão cruel e injusto, A cabana levanta um questionamento atemporal: se Deus é tão pode
+                                roso, por que não faz nada para amenizar o nosso sofrimento? As respostas que Mack encontra vão surpreender você e podem transformar sua
+                                vida de forma tão profunda quanto transformou a dele. Você vai querer partilhar este livro com todas as pessoas que ama.
+                            </p>
+                            <p>Nome: A cabana</br>Valor: R$ 29,89</br>Autor: William P. Young</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal66')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao07.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A Garota No Trem</br>De <s>R$ 44,90</s></br> Por apenas R$ 34,90 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn67" class="comprar" onclick="submenu('myBtn67','myModal67','close67')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal67" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao07.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-na.ssl-images-amazon.com/images/I/51ZpptuSWvL._SX336_BO1,204,203,200_.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                A garota no trem, best-seller internacional que deu origem ao filme estrelado por Emily Blunt. Todas as manhãs Rachel pega o trem das 8h04 de Ashbury para Londres.
+                                O arrastar trepidante pelos trilhos faz parte de sua rotina. O percurso, que ela conhece de cor, é um hipnotizante passeio por galpões, caixas d’água, pontes, casebres
+                                e aconchegantes casas vitorianas.Em determinado trecho, o trem para no sinal vermelho. E é de lá que Rachel observa diariamente a casa de número 15. Obcecada com seus belos habitantes
+                                – a quem chama de Jess e Jason –, Rachel é capaz de descrever o que imagina ser a vida perfeita do jovem casal. Até testemunhar uma cena chocante, segundos antes de
+                                o trem dar um solavanco e seguir viagem. Poucos dias depois, ela descobre que Jess – na verdade Megan – está desaparecida.Sem conseguir se manter alheia à situação,
+                                ela vai à polícia e conta o que viu. E acaba não só participando diretamente do desenrolar dos acontecimentos, mas também da vida de todos os envolvidos.Uma narrativa
+                                extremamente inteligente e repleta de reviravoltas, A garota no trem é um thriller digno de Hitchcock a ser compulsivamente devorado. “Nada é mais viciante que A garota no trem.”
+                                Vanity Fair“Os fãs de Garota exemplar vão devorar esse thriller psicológico.” People O livro adulto que vendeu mais rápido na história.Eleito em 2015 um dos melhores livros do ano pelo Kirkus Reviews.Vencedor do
+                                Goodreads Choice Award de 2015 na categoria Mistério & Thriller.
+                            </p>
+                            <p>Nome: A Garota No Trem</br>Valor: R$ 34,90</br>Autor: Hawkins, Paula</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal67')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao08.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A culpa é das estrelas</br>De <s>R$ 34,90</s></br> Por apenas R$ 28,79 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn68" class="comprar" onclick="submenu('myBtn68','myModal68','close68')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal68" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao08.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://v0.static.betalabs.com.br/uploads/gestao_ja/produto/produto_foto/thumb/1000x10007a75495e03936151e76be6648ed16352.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Hazel é uma paciente terminal. Ainda que, por um milagre da medicina, seu tumor tenha encolhido bastante — o que lhe dá a promessa de viver mais alguns anos —,
+                                o último capítulo de sua história foi escrito no momento do diagnóstico. Mas em todo bom enredo há uma reviravolta, e a de Hazel se chama Augustus Waters,
+                                um garoto bonito que certo dia aparece no Grupo de Apoio a Crianças com Câncer. Juntos, os dois vão preencher o pequeno infinito das páginas em branco de suas vidas.
+                                Inspirador, corajoso, irreverente e brutal, A culpa é das estrelas é a obra mais ambiciosa
+                                e emocionante de John Green, sobre a alegria e a tragédia que é viver e amar.Best-seller da Veja
+                            </p>
+                            <p>Nome: A Garota No Trem</br>Valor: R$ 28,79</br>Autor: John Green</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal68')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao09.jpg">
+            <div class="imginterna">
+                <p></br>Nome: A guerra dos mundos</br>De <s>R$ 54,90</s></br> Por apenas R$ 47,50 </p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn69" class="comprar" onclick="submenu('myBtn69','myModal69','close69')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal69" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao09.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://images-americanas.b2w.io/produtos/01/00/img/2111689/4/2111689445_1SZ.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>
+                                Eles vieram do espaço. Eles vieram de Marte. Com tripés biomecânicos gigantes, querem conquistar a Terra e manter os humanos como escravos.
+                                Nenhuma tecnologia terrestre parece ser capaz de conter a expansão do terror pelo planeta. É o começo da guerra mais importante da história.
+                                Como a humanidade poderá resistir à investida de um potencial bélico tão superior? Publicado pela primeira vez em 1898, A guerra dos mundos
+                                aterrorizou e divertiu muitas gerações de leitores. Esta edição especial contém as ilustrações originais criadas em 1906 por Henrique Alvim Corrêa,
+                                brasileiro radicado na Bélgica. Conta também com um prefácio escrito por Braulio Tavares, uma introdução de Brian Aldiss, membro da H. G. Wells Society,
+                                e uma entrevista com H. G. Wells e o famoso cineasta Orson Welles - responsável pelo
+                                sucesso radiofônico de A guerra dos mundos em 1938 -, que fazem desta a edição definitiva para fãs de Wells.
+                            </p>
+                            <p>Nome: A guerra dos mundos</br>Valor: R$ 47,50</br>Autor: H.G.Wells</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal69')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="livro">
+            <img class="imgFrontal" src="..\Compras\Livraria\ficcao10.jpg">
+            <div class="imginterna">
+                <p></br>Nome: Perdido Em Marte - Uma Missão A Marte.</br>De <s>R$ 35,90</s></br> Por apenas R$ 29,90</p>
+                <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                <button id="myBtn70" class="comprar" onclick="submenu('myBtn70','myModal70','close70')">SAIBA MAIS</button>
+
+                <!--DIV OCULTA / SÓ APARECE APOS CLIQUE EM SAIBA MAIS-->
+                <div id="myModal70" class="modal">
+                    <div class="modal-content">
+                        <!----<p href="..\Compras\Livraria\x.png"></p>--->
+                        <div id="imgOculta"><img class="imgoculta" src="..\Compras\Livraria\ficcao10.jpg"></div>
+
+                    </div>
+                    <div class="modal-content">
+                        <div id="inforB" class="informacoes">
+                            <a href="https://cheirodelivro.com/wp-content/uploads/2015/01/perdido-em-marte.jpg"><p>Link de captura</p></a><br /><p>Data da Captura: 04/11/2020</p>
+                            <p>Ha seis dias, o astronauta Mark Watney se tornou a decima sétima pessoa a pisar em Marte. E, provavelmente, será a primeira a morrer no planeta vermelho.
+                            Depois de uma forte tempestade de areia, a missão Ares 3 e abortada e a tripulação vai embora, certa de que Mark morreu em um terrível acidente. Ao despertar, 
+                            ele se vê completamente sozinho, ferido e sem ter como avisar as pessoas na Terra que está vivo. E, mesmo que conseguisse se comunicar, seus mantimentos terminariam anos 
+                            antes da chegada de um possível resgate. Ainda assim, Mark não está disposto a desistir. Munido de nada além de curiosidade e de suas habilidades de engenheiro e botânico e 
+                            um senso de humor inabalável, ele embarca numa luta obstinada pela sobrevivência. Para isso, será o primeiro homem a plantar batatas em Marte e, usando uma genial mistura
+                            de cálculos e fita adesiva, vai elaborar um plano para entrar em contato com a Nasa e, quem sabe, sair vivo de lá. Com um forte embasamento científico real e moderno, perdido em Marte 
+                            e um suspense memorável e divertido, impulsionado por uma trama que não para de surpreender o leitor.
+                            </p>
+                            <p>Nome: Perdido Em Marte - Uma Missão A Marte.</br>Valor: R$ 29,90</br>Autor: Andy Weir</p>
+
+                        </div>
+                        <div>
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprarOculto">
+                            <input type="button" name="fechar" value="Fechar" onclick="fechar('myModal70')" class="comprarOculto">
+                            <input type="button" name="fechar" value="Carrinho" class="comprarOculto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+ </div>
+</div>
+    </body>
+    </html>

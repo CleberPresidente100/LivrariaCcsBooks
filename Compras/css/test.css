@@ -1,0 +1,51 @@
+.container {
+  width:100%;
+  position: relative;
+  height: 50px;
+}
+input {
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 50px;
+  width: 0;
+  position: absolute;
+  top: 0px;
+  left: 65%;
+  background: none;
+  z-index: 3;
+  transition: width 1s ease-out;
+  cursor: pointer;
+}
+input:focus { 
+  border: 2px solid #000;
+  border-radius: 25px;
+  width: 35%;
+  z-index: 1;
+  transition: width 1s ease-in;
+}
+button { 
+  height: 50px;
+  width: 50px;
+  background:  url('../imagens/lupa.png')  center no-repeat;
+  border: none;
+  position: absolute;
+  top: -5px;
+  left: 65%;
+  z-index: 2;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+/* esconde o LABEL "Buscar" */
+label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;	
+}

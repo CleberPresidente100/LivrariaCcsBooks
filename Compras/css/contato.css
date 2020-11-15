@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+p{
+	font-family:sans-serif;
+	font-weight: bolder;
+}
+h1{
+	font-family:sans-serif;
+	font-weight: bolder;
+	font-size:20px;
+	text-align: center;
+	padding: 10px;
+
+}
+input{
+	background:#DCDCDC;
+}
+textarea{
+	background:#DCDCDC;
+}
+#enviar{
+	background-color: #6495ED;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 7px;
+	font-family:sans-serif;
+	
+}
+
+#global{
+	height: 30%;
+	width: 100%;
+	float: left;
+	background:#6495ED;
+	
+}
+#contato{
+	list-style-type:none;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.enviodemsg{
+	float:center;
+	height:20px ;
+	width: 65%;
+	border-style: inset;
+	border-color: #3d63ce;
+	border-width: 2px;
+	border-radius: 7px;
+	
+}
+.enviodemsg2{
+	float:center;
+	height:60px ;
+	width: 65%;
+	border-style: inset;
+	border-color: #3d63ce;
+	border-width: 2px;
+	border-radius: 5px;
+	
+}
+
+#centraldeatendimento{
+	height: 200px;
+	width: 50%;
+	float:center;
+	border-radius: 10px;
+}
+#contatoImg{
+	display: block;
+	list-style: none;
+	margin: 30px auto 30px auto;
+	border-top: 1px black solid;
+
+}
+.contato{
+	display:inline-flex; 
+	justify-content:space-around;
+	width: 33%;
+	text-align: center;
+	list-style: none;
+
+}
