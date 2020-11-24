@@ -1,150 +1,134 @@
-﻿
 <!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-    <teatle></teatle>
+    <title>contato</title>
+    <!-- Configuração do Mapa de Caracteres -->
+    <meta charset="UTF-8">
+    <!-- Nome da Disciplina -->
+    <meta name="disciplina" content="Ciencia da Computacao I">
+    <!-- Desenvolvedor da página -->
+    <meta name="author" content="Cleber da Silva Melo , Caio Silva Barbara, Sâmila Milena P. A. Dias , Richard de Freitas Galhardo , Nicolas Barbosa Correia">
+    <!-- Desenvolvedor da página -->
+    <meta name="curso" content="Ciencia da Computacao">
+    <!-- Desenvolvedor da página -->
+    <meta name="semestre" content="5">
+    <!-- Palavras chaves para buscas -->
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,PROVA,CIENCIA DA COMPUTACAO">
+    <!-- Bibliotecas de CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/busca.css">
     <link rel="stylesheet" type="text/css" href="..\Contato\contato.css">
-    <script></script>
     <script src="..\Contato\contato.js"></script>
+    <script type="text/javascript" src="../../js/inicial.js"></script>
+
 </head>
-        <body>
 
+<body>
 
-            <div id="global">
-                <div id="logo">
-                    <b><img class="logo" src="..\Contato\CSSBOOKS\logo.png"></img>
-                </div>
+    <div class="interface">
 
+        <header>
+            <div id="cabecalho">
 
-                <table id="menu">
-                    <tr>
-                        <li id="menu">
-                        <td class="menu">
-                            </br><a href="#" id="menu1"><b>Carrinho de compras</b></a>
-                            <img id="carrinho" src="..\Contato\CSSBOOKS\carrinho.jpg"></img>
-                        </td>
-                        <td class="menu"><a href="..\Contato\CSSBOOKS\HTMLPage1.html" id="menu"><b>PÁGINA INICIAL</b></a></td>
-                        <td class="menu"><a href="#" id="menu"><b>SOBRE NOS</b></a></td>
-                        <td class="menu"><a href="#" id="menu"><b>TODA LOJA</b></a></td>
+                <!--imagens do cabeçalho-->
+                <a href="../PaginaInicial/inicial.html"> <img src="../../imagens/logo2.png" alt="CcsBooks"
+                        id="logo"></a>
 
-                        </li>
-                    </tr>
-                </table>
-            </div>
-            <div id="global2">
-                <div id="login1">
-                    <a href="#" id="login"><b>LOGIN</b></a>
-                    <img id="imglogin" src="..\Contato\CSSBOOKS\login.jpg"></img>
-                </div>
-                <div id="divBusca">
-                    <input type="text" id="txtBusca" placeholder="O que você procura?" />
-                    <button id="btnBusca">Buscar</button>
-                </div>
+                <a href="../CadastroUsuarios/cadastro.html"> <img src="../../imagens/icone-cadastro.png"
+                        onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" id="cadastro"></a>
+                <a href=""> <img src="../../imagens/icone-compras.png" onMouseOver="mouseEmCima2(this)"
+                        onMouseOut="mouseFora2(this)" id="carrinho"> </a>
+                <a href="../LoginUsuario/login.html"> <img src="../../imagens/login.png" alt="login" id="iconeLogin"></a>
 
-            </div>
-            </div>
-
-            <div id="envio1"><center>
-                <form method="post" action="index.com">
-                    <b id="envio">
-                        </br></br> </br></br> </br></br> </br></br> </br></br>Conversar com você, consumidor, é uma das coisas que mais valorizamos. </br> Informe para nós qual a sua dúvida,
-                        informação desejada ou mesmo críticas e sugestões que estaremos sempre prontos para responder.
-                    </b></br></br
-                    <input type="hidden" value="samila.milenna@gmail.com" name="CSSBOOKS"></input>
-                    <b>
-                        Nome:<b>
-                            <br>
-                            <div class="input">
-                                <input type="text" name="nome" placeholder="digite seu Nome aqui" class="enviodemsg" id="nome1" required maxlength="25" minlength="5"
-                                       onblur="validarNome()"></input>
-                            </div>
-                            <div class="input">
-                                <b>
-                                    E-mail<br>
-                                    <input type="email" name="email" placeholder="Digite seu e-mail" class="enviodemsg" id="email" required maxlength="50"
-                                           onblur="validarEmail()"></input></br>
-                            </div></br>
-                            <div class="input">
-                                <b> Tel Fixo </b><b>
-                                    <input type="text" placeholder="(DDD) XXXXX-2969" class="enviodemsg" name="telefonefixo"
-                                           id="telefonefixo" size="20" minlength="14" required maxlength="14"
-                                           onkeypress="mascara2(this)">
-                                    <b> Tel Celular </b><input type="text" placeholder="(DDD) XXXXX-2969" class="enviodemsg"
-                                                               name="telefonecelular" id="telefonecelular" size="20" minlength="15"
-                                                               required maxlength="15" onkeypress="mascara(this)" onblur="mascara(this)"></br></br>
-                            </div>
-                            <div class="input">
-                                <b>
-                                    Digite aqui sua mensagem<b>
-                                        <br></br>
-                                        <textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2" required maxlength="110" minlength="20"></textarea></br></br>
-                                        <input type="submit" name="enviar" value="Enviar" id="enviar" onclick="alerta()">
-                            </div>
-
+                <!--botão de busca -->
+                <form action=" " method="post" id="busca">
+                    <label for="busca">Buscar</label>
+                    <input type="search" name="q" placeholder="Pesquisar...">
+                    <button type="submit"></button>
                 </form>
+
+                <!--menu------------>
+                <nav id="menu">
+                    <ul>
+                        <a href="../PaginaInicial/inicial.html"><li>inicio</li></a>
+                        <a href="../Compras/Compras.html"><li>Livros</li></a>
+                        <a href="../Contato/contato.html"><li>contato</li></a>
+                    </ul>
+                </nav>
             </div>
-            <table>
-                <tr>
-                    <li>
-                    <td id="contato"><h5><img id="contato" src="..\Contato\CSSBOOKS\telefone.jpg">(11) 3500-XXX</h5></td>
-                    <td id="contato"><h5><img id="contato" src="..\Contato\CSSBOOKS\whats.png">(11) 3500-XXX</h5></td>
-                    <td id="contato"><h5><img id="contato" src="..\Contato\CSSBOOKS\email.jpg">contato@ccsbooks.com.br</h5></td>
-                    </li>
-
-                </tr>
-            </table>
+        </header>
 
 
+        <div id="conteudo">
 
-            <footer>
+
+            <div id="envio1">
                 <center>
-                    </br></br>
-                    <img id="logorodape" src="..\Contato\CSSBOOKS\logo.png"></img></br></br>
-                    <div id="centralizarrodape">
-                        <center>
-                            <table>
-                                <tr>
-                                    <li>
-                                    <td class="rodapechar">
-                                        <h4 style="color:#fff"><i>As ofertas são válidas por tempo determinado </br> e/ou enquanto durarem os estoques.<i></h4>
-                                    </td>
-                                    <td>
-                                        <h4 class="rodapechar" style="color:#fff">Rua xxxxxxxxxxxx n° xxx </br>Bairro: xxxxxxxxx / Sao Paulo - SP</h4>
-                                    </td>
+                    <h1>
+                        "Conversar com você, consumidor, é uma das
+                        coisas que mais valorizamos. </br> Informe para nós qual a sua dúvida,
+                        informação desejada ou mesmo críticas e sugestões que estaremos sempre prontos para responder."
+                    </h1>
 
-                                    </li>
-                                </tr>
-                            </table>
+                    <form method="post" name="formulario">
+                        </br> <input type="hidden" value="samila.milenna@gmail.com" name="CSSBOOKS"></input>
+                        <b>Nome:<b><br>
+                                <div class="input">
+                                    <input type="text" name="nome" placeholder="Digite seu Nome completo"
+                                        class="enviodemsg" id="nome1" required minlength="5" maxlength="25"></input>
+                                </div>
 
-                            <b> </b></br>
-                            <b></b>
+                                <div class="input">
+                                    <b>E-mail:<br>
+                                        <input type="email" name="email" placeholder="Digite seu e-mail"
+                                            class="enviodemsg" id="email" required maxlength="50"></input></br>
+                                </div></br>
 
-                            <table>
-                                <tr>
-                                    <li id="linharedess">
-                                    <td class="redess">
-                                        <a href="https://www.instagram.com/?hl=pt-br" id="rd">
-                                            <b><img id="imgredess" src="..\Contato\CSSBOOKS\instagram.jpg">@CSSBOOKS</b>
-                                    </td></a>
-                                    <td class="redess">
-                                        <a href="https://pt-br.facebook.com/" id="rd">
-                                            <b><img id="imgredess" src="..\Contato\CSSBOOKS\facebook.jpg">@CSSBOOKS</b>
-                                    </td></a>
-                                    <td class="redess">
-                                        <a href="https://twitter.com/login?lang=pt" id="rd">
-                                            <b><img id="imgredess" src="..\Contato\CSSBOOKS\twitter.jpg">@CSSBOOKS</b>
-                                    </td></a>
-                                    </li>
+                                <div class="input">
+                                    <b> Tel Fixo: </b><b>
+                                        <input type="text" placeholder="(DDD) XXXXX-2969" class="enviodemsg"
+                                            name="telefonefixo" id="telefonefixo" size="20" minlength="14" required
+                                            maxlength="14" onkeypress="mascara2(this)">
 
-                                </tr>
-                                <table>
+                                        <b> Tel Celular </b>
+                                        <input type="text" placeholder="(DDD) XXXXX-2969" class="enviodemsg"
+                                            name="telefonecelular" id="telefonecelular" size="15" minlength="15"
+                                            required maxlength="15" onkeypress="mascara(this)"
+                                            onblur="mascara(this)"></br></br>
+                                </div>
+                                <div class="input">
 
+                                    <b>Digite aqui sua mensagem:<b>
+                                            <br></br>
+                                            <textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2"
+                                                required  minlength="20" maxlength="110" id="mensagem"></textarea></br></br>
+                                            <input type="submit" name="enviar" value="Enviar" id="enviar"
+                                                onclick="Validacao()">
+                                </div>
 
-                    </div>
-            </footer>
-
-
-
-
+                    </form>
             </div>
-        </body>
-        </html>
+
+            <div id="imgcontatos">
+                <ul>
+                    <li><img src="../../imagens/telefone.png">(11) 3500-XXX</li>
+                    <li><img src="../../imagens/whatsapp.png">(11) 3500-XXX</li>
+                    <li><img src="../../imagens/em.png">contato@ccsbooks.com.br</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--rodape----------->
+    <footer>
+        <img src="../../imagens/logo.png" alt="logo" id="logoRodape">
+        <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
