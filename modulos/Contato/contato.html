@@ -1,0 +1,136 @@
+﻿<!-- PÁGINA TESTADA UTILIZANDO O NAVEGADOR FIREFOX versão: 81.0.1 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>contato</title>
+    <!-- Configuração do Mapa de Caracteres -->
+    <meta charset="UTF-8">
+    <!-- Nome da Disciplina -->
+    <meta name="disciplina" content="Ciencia da Computacao I">
+    <!-- Desenvolvedor da página -->
+    <meta name="author" content="Cleber da Silva Melo , Caio Silva Barbara, Sâmila Milena P. A. Dias , Richard de Freitas Galhardo , Nicolas Barbosa Correia">
+    <!-- Desenvolvedor da página -->
+    <meta name="curso" content="Ciencia da Computacao">
+    <!-- Desenvolvedor da página -->
+    <meta name="semestre" content="5">
+    <!-- Palavras chaves para buscas -->
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,PROVA,CIENCIA DA COMPUTACAO">
+    <!-- Bibliotecas de CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/busca.css">
+    <link rel="stylesheet" type="text/css" href="..\Contato\contato.css">
+    <script src="..\Contato\contato.js"></script>
+    <script type="text/javascript" src="../../js/inicial.js"></script>
+
+</head>
+
+<body>
+
+    <div class="interface">
+
+        <header>
+            <div id="cabecalho">
+
+                <!--imagens do cabeçalho-->
+                <a href="../PaginaInicial/inicial.html"> <img src="../../imagens/logo2.png" alt="CcsBooks"
+                        id="logo"></a>
+
+                <a href="../CadastroUsuarios/cadastro.html"> <img src="../../imagens/icone-cadastro.png"
+                        onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" id="cadastro"></a>
+                <a href=""> <img src="../../imagens/icone-compras.png" onMouseOver="mouseEmCima2(this)"
+                        onMouseOut="mouseFora2(this)" id="carrinho"> </a>
+                <a href="../LoginUsuario/login.html"> <img src="../../imagens/login.png" alt="login" id="iconeLogin"></a>
+
+                <!--botão de busca -->
+                <form action=" " method="post" id="busca">
+                    <label for="busca">Buscar</label>
+                    <input type="search" name="q" placeholder="Pesquisar...">
+                    <button type="submit"></button>
+                </form>
+
+                <!--menu------------>
+                <nav id="menu">
+                    <ul>
+                        <a href="../PaginaInicial/inicial.html"><li>inicio</li></a>
+                        <a href="../Compras/Compras.html"><li>Livros</li></a>
+                        <a href="../Contato/contato.html"><li>contato</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div id="conteudo">
+
+
+            <div id="envio1">
+                <center>
+                    <h1>
+                        "Conversar com você, consumidor, é uma das
+                        coisas que mais valorizamos. </br> Informe para nós qual a sua dúvida,
+                        informação desejada ou mesmo críticas e sugestões que estaremos sempre prontos para responder."
+                    </h1>
+
+                    <form method="post" name="formulario">
+                        </br> <input type="hidden" value="samila.milenna@gmail.com" name="CSSBOOKS"></input>
+                        <b>Nome:<b><br>
+                                <div class="input">
+                                    <input type="text" name="nome" placeholder="Digite seu Nome completo"
+                                        class="enviodemsg" id="nome1" required minlength="5" maxlength="25"></input>
+                                </div>
+
+                                <div class="input">
+                                    <b>E-mail:<br>
+                                        <input type="email" name="email" placeholder="Digite seu e-mail"
+                                            class="enviodemsg" id="email" required maxlength="50"></input></br>
+                                </div></br>
+
+                                <div class="input">
+                                    <b> Tel Fixo: </b><b>
+                                        <input type="text" placeholder="(DDD) XXXXX-2969" class="enviodemsg"
+                                            name="telefonefixo" id="telefonefixo" size="20" minlength="14" required
+                                            maxlength="14" onkeypress="mascara2(this)">
+
+                                        <b> Tel Celular </b>
+                                        <input type="text" placeholder="(DDD) XXXXX-2969" class="enviodemsg"
+                                            name="telefonecelular" id="telefonecelular" size="15" minlength="15"
+                                            required maxlength="15" onkeypress="mascara(this)"
+                                            onblur="mascara(this)"></br></br>
+                                </div>
+                                <div class="input">
+
+                                    <b>Digite aqui sua mensagem:<b>
+                                            <br></br>
+                                            <textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2"
+                                                required  minlength="20" maxlength="110" id="mensagem"></textarea></br></br>
+                                            <input type="submit" name="enviar" value="Enviar" id="enviar"
+                                                onclick="Validacao()">
+                                </div>
+
+                    </form>
+            </div>
+
+            <div id="imgcontatos">
+                <ul>
+                    <li><img src="../../imagens/telefone.png">(11) 3500-XXX</li>
+                    <li><img src="../../imagens/whatsapp.png">(11) 3500-XXX</li>
+                    <li><img src="../../imagens/em.png">contato@ccsbooks.com.br</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--rodape----------->
+    <footer>
+        <img src="../../imagens/logo.png" alt="logo" id="logoRodape">
+        <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
