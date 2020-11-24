@@ -1,0 +1,230 @@
+﻿body
+{
+}
+required {
+    !important;
+}
+.tituloCampo {
+    margin-left: 5px;
+}
+input:invalid {
+    border-color: #708090;
+
+}
+.BtSalvar {
+    margin-left: 50%;
+    background: #87CEFA;
+    height: 450px;
+    width: 100px;
+    height: 45px;
+    border-radius: 7px;
+}
+
+#emailInvalid {
+    display: none;
+}
+#SenhaInvalid {
+    display: none;
+}
+#caixaCadastro {
+    display: inline-block;
+    padding: 5px;
+    border: 3px#3d63ce solid;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    width: 65%;
+    height: 100%;
+    background: #fff;
+    border-top: 20px #3d63ce solid;
+    margin-left: 17%;
+}
+#Cadastro {
+    border-radius: 7px;
+    width: 100%;
+    min-height: 560px;
+    margin: 0px auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.Nome {
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+    height: 20px;
+    width: 80%;
+}
+.campoCelTel {
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+    height: 20px;
+    width: 39.1%;
+}
+.Endereco {
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+    height: 20px;
+    width: 75.2%;
+}
+.campoTexto {
+    border-color: #6495ED;
+    background: #DCDCDC;
+    border-style: inset;
+    border-width: 3px;
+    border-radius: 7px;
+    font-family: courier,arial,helvetica;
+    height: 20px;
+    width: 310px;
+}
+.CampoPequeno {
+    height: 20px;
+    width: 50px;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.NuCartao {
+    height: 20px;
+    width: 40%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.campoMedio {
+    height: 20px;
+    width: 40%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.BairroCidade {
+    height: 20px;
+    width: 40%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.UF {
+    height: 30px;
+    width: 30%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.Email1 {
+    height: 20px;
+    width: 40%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.Email2 {
+    height: 20px;
+    width: 30%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+#loginImg2 {
+    margin-left: 45%;
+    width: 10%;
+    height: 10%;
+    margin-top: 10px;
+}
+#emailInvalid {
+    color: red;
+    margin-left: 70%
+}
+#SenhaInvalid {
+    color: red;
+    margin-left: 70%
+}
+.Senha1 {
+    height: 20px;
+    width: 35%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.Senha2 {
+    height: 20px;
+    width: 35%;
+    border-color: #6495ED;
+    background: #DCDCDC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+#Cadastro {
+    float: left;
+}
+
+.BtSalvar {
+    height: 30px;
+    width: 100px;
+    margin: 5px auto;
+    margin-left: 38%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+    .BtSalvar:hover {
+        background-color: #3d63ce;
+        color: white;
+    }
+.BtLogin {
+    height: 30px;
+    width: 150px;
+    margin: 5px auto;
+    padding-left: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+    .BtLogin:hover {
+        background-color: #3d63ce;
+        color: white;
+    }
