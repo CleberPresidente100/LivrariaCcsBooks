@@ -1,6 +1,17 @@
 /**Validando Nome */
-function alerta() {
-    alert('Obrigado(a) pelo seu contato, em breve retornaremos!');
+function Validacao() {
+
+    if (document.getElementById('nome1').value.length >= 5) { //validar nome
+        if (validarEmail()) { // validar email
+            if (document.getElementById('telefonefixo').value.length >= 14) { // validar telefone fixo
+                if (document.getElementById('telefonecelular').value.length >= 15) // validadar celular
+                    if (document.getElementById('mensagem').value.length >= 20) {
+                        alert('Obrigado(a) pelo seu contato, em breve retornaremos!');
+                    }
+            }
+        }
+    }
+   
 }
 function validarNome(nome) {
     var nome = document.querySelector('#nome');
@@ -18,7 +29,9 @@ function validarEmail() {
 
     if (!email.checkValidity() || email.value == "") {
         error.innerHTML = "Invalido";
+        return 0;
     }
+    return 1;
 
 }
 /*validando telefone*/
@@ -26,21 +39,23 @@ function validarEmail() {
 function mascara(telefonecelular) {
     var errorc = document.querySelector('#error-celular');
     if (telefonecelular.value.length == 0)
-        telefonecelular.value = '(' + telefonecelular.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+        telefonecelular.value = '(' + telefonecelular.value; //quando comeï¿½amos a digitar, o script irï¿½ inserir um parï¿½nteses no comeï¿½o do campo.
     if (telefonecelular.value.length == 3)
-        telefonecelular.value = telefonecelular.value + ') '; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
+        telefonecelular.value = telefonecelular.value + ') '; //quando o campo jï¿½ tiver 3 caracteres (um parï¿½nteses e 2 nï¿½meros) o script irï¿½ inserir mais um parï¿½nteses, fechando assim o cï¿½digo de ï¿½rea.
 
-    if (telefonecelular.value.length == 9)
-        telefonecelular.value = telefonecelular.value + '-'; //quando o campo já tiver 9 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
+    if (telefonecelular.value.length == 10)
+        telefonecelular.value = telefonecelular.value + '-'; //quando o campo jï¿½ tiver 9 caracteres, o script irï¿½ inserir um tracinho, para melhor visualizaï¿½ï¿½o do telefone.
 
 }
+
 function mascara2(telefonefixo) {
+    var errorc = document.querySelector('#error-celular');
     if (telefonefixo.value.length == 0)
-        telefonefixo.value = '(' + telefonefixo.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+        telefonefixo.value = '(' + telefonefixo.value; //quando comeï¿½amos a digitar, o script irï¿½ inserir um parï¿½nteses no comeï¿½o do campo.
     if (telefonefixo.value.length == 3)
-        telefonefixo.value = telefonefixo.value + ') '; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
+        telefonefixo.value = telefonefixo.value + ') '; //quando o campo jï¿½ tiver 3 caracteres (um parï¿½nteses e 2 nï¿½meros) o script irï¿½ inserir mais um parï¿½nteses, fechando assim o cï¿½digo de ï¿½rea.
 
     if (telefonefixo.value.length == 9)
-        telefonefixo.value = telefonefixo.value + '-'; //quando o campo já tiver 8 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
+        telefonefixo.value = telefonefixo.value + '-'; //quando o campo jï¿½ tiver 9 caracteres, o script irï¿½ inserir um tracinho, para melhor visualizaï¿½ï¿½o do telefone.
 
 }
