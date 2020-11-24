@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="carrinho.css">
+    </head>
+
+    
+
+    <body>
+        <div class="lista-produtos">
+            <div class="lista-produtos2">
+                <h5 class="nome-produto">LIVRO</h5>
+                <h5 class="preco">PREÇO</h5>
+                <h5 class="quantidade">QUANTIDADE</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="produtos">
+
+            </div>
+        </div>
+        <input type="submit" onclick="finalizarCompra()" class="finalizar-compra" value="FINALIZAR COMPRA"></input>
+        <script src="carrinho.js"></script>
+        <script src="../../js/livros.js"></script>
+        <script>
+            function mostrarCarrinho(){
+                carregarCarrinho();
+                var valorTotal = 0;
+                let listaProdutos = document.querySelector(".produtos");
+                if(produtoCarrinho && listaProdutos){
+                    listaProdutos.innerHTML = '';
+                    Object.values(produtoCarrinho).map(item => {
+                        listaProdutos.innerHTML += `
+                        <div class="livros">
+                            <input class="botao" type="image" src="../../imagens/BotaoX.png" height="50" width="50" onClick="removerProduto(id)" id="${item.idLivro}"> </input>
+                            <img src="../../capasLivros/${item.idLivro}.jpg" height="170" width="150">
+                        </div>
+                        <div class="preco">$15,00</div>
+                        <div class="quantidade">
+                            <input class="botao-esquerda" type="image" src="../../imagens/SetaE.png" height="25" width="25" onClick="diminuirProduto(id)" id="${item.idLivro}"> </input>
+                            <span>${item.quantidade}</span>
+                            <input class="botao-direita" type="image" src="../../imagens/SetaD.png" height="25" width="25" onClick="contadorCarrinho(id)" id="${item.idLivro}"> </input>
+                        </div>
+                        <div class="total">
+                            $${item.quantidade * 15},00
+                        </div>
+                        `
+                    });
+                    listaProdutos.innerHTML += `
+                    <h3 class="frete">Frete:$9,90<br></h3>
+                    <div class="valor-total"><br><br>Valor total: $30,00</div>
+                    `
+                }
+
+            }
+            mostrarCarrinho();
+        </script>
+    </body>
+</html>

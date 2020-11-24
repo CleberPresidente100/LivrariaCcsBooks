@@ -1,0 +1,95 @@
+.lista-produtos{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.lista-produtos2{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+    align-items: center;
+}
+.nome-produto{
+    position: relative;
+    left: 60px;
+    width: 45%;
+}
+.preco{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.quantidade{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.total{
+    width: 10%;
+    display:flex;
+    align-items: center;
+}
+.produtos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.livros{
+    display: flex;
+    margin-right: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+.botao{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.botao-direita{
+    position: relative;
+    right: 50px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.botao-esquerda{
+    position: relative;
+    left: 50px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.frete{
+    position: relative;
+    left: 650px;
+}
+.valor-total{
+    position: relative;
+    left: 136px;
+}
+.finalizar-compra{
+    border: 2px solid;
+    height: 50px;
+    width: 200px;
+    border-color: #5F9EA0;
+    background: #5F9EA0;
+    border-radius: 3px;
+    margin-left: 5%;
+    position: relative;
+    border-top: 10px;
+    left: 1150px;
+    top: 30px;
+}
