@@ -1,162 +1,32 @@
-﻿body {
-    background: #AAA;
-}
+@charset "UTF-8";
 
-required {
+a, b, h2, h3, h4 {
+    color: black;
+    font-family:sans-serif;
+}
+h1{
+    font-size: 18px;
+}
+required{
     !important;
 }
-
-a, b, h1, h2, h3, h4 {
-    color: #fff;
-    font-family: courier,arial,helvetica;
-}
-
-/*MENU PRINCPIPAL*/
-    a:hover {
-        background-color: #6495ED;
-        border-style: inset;
-        border-width: 2px;
-        border-radius: 7px;
-    }
-#menuprincipal {
-    height: 30%;
-    width: 100%;
-    float: left;
-    background: #6495ED;
-}
-#menu {
-    float: right;
-    list-style-type: none text-decoration: none;
-}
-
-.menu {
-    list-style-type: none text-decoration: none;
-    margin-top: 40px;
-    float: right;
-    margin-right: 60px;
-}
-#carrinho {
-    width: 40px;
-    border-radius: 50%;
-    cellspacing: 10px;
-    margin-right: 5px;
-}
-
-#global2 {
-    height: 50px;
-    width: 100%;
-    background: #00008B;
-    float: right;
-}
-
-#divBusca {
-    background: #DCDCDC;
-    margin-left: 70%;
-    margin-top: 1px;
-    border: solid 2px #5F9EA0;
-    border-radius: 10px;
-    width: 300px;
-    height: 32px;
-}
-
-#txtBusca {
-    float: rigth;
-    background-color: transparent;
-    padding-left: 5px;
-    font-size: 18px;
-    border: 1px;
-    height: 32px;
-    width: 191px;
-}
-
-#btnBusca {
-    border: 1px;
-    float: right;
-    height: 100%;
-    width: 70px;
-    border-radius: 0 7px 7px 0;
-    font-weight: bold;
-    background: #6495ED;
-}
-
-    #btnBusca:hover {
-        background-color: #6495ED;
-        border-style: inset;
-        border-width: 3px;
-        border-radius: 7px;
-    }
-
-#global {
-    height: 30%;
-    width: 100%;
-    float: left;
-    background: #6495ED;
-}
-
-#logo {
-    height: 100%;
-    width: 20%;
-    float: left;
-}
-
-.logo {
-    height: 60%;
-    width: 100%;
-    float: left;
-}
-
-
-#login {
-    border-radius: 0 7px 7px 0;
-    font-weight: bold;
-}
-
-#imglogin {
-    list-style-type: none height: 40px;
-    height: 30px;
-    width: 30px;
-    margin-top: 15px;
-    border-radius: 50%;
-    cellspacing: 10px;
-    margin-right: 2px;
-}
-
-#login1 {
-    margin-left: 3%;
-    height: 10%;
-    width: 20%;
-}
-
-
-
 /*FORMULARIO*/
-
-#envio1 {
-    boder: 1px;
-    border-color: #FFF;
+form {
+    display: inline-block;
+    width: 100%;
+    margin: 30px auto;
 }
-
-
+#envio1{
+    margin: 30px;
+}
 input {
     background: #DCDCDC;
 }
 
-    input:focus, textarea:focus {
-        border-color: #6495ED !important;
+
+    input:invalid, textarea:invalid {
+        border-color: #A9A9A9;
     }
-
-.input span {
-    color: crimson;
-    display: none; /* Esconde o span */
-}
-
-.input input:invalid + span {
-    display: inline /* Exibe o span somente se o input for inválido. */
-}
-
-input:invalid, textarea:invalid {
-    border-color: crimson;
-}
 
 textarea {
     background: #DCDCDC;
@@ -184,19 +54,12 @@ textarea {
 
 
 /*Contatos*/
-
-#contato {
-    list-style-type: none height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    cellspacing: 10px;
-    margin-left: 70%;
+#imgcontatos ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px;
 }
-
-#envio {
-    border-top: 10cm;
-}
-
 .enviodemsg {
     float: center;
     height: 20px;
@@ -216,21 +79,16 @@ textarea {
     border-width: 2px;
     border-radius: 5px;
 }
-
-
-#contato {
-    margin-right: 400px;
-    margin-left: 40px;
-}
-
 .contato {
-    list-style-type: none float:center;
+    list-style-type: none; 
+    float:center;
     margin-right: 300px;
     margin-left: 30px;
 }
 
 #imgredess {
-    list-style-type: none height: 40px;
+    list-style-type: none;
+    height: 40px;
     width: 20px;
     border-radius: 50%;
     margin-right: 2px;
@@ -242,30 +100,5 @@ textarea {
     list-style-type: none;
 }
 
-/*Rodape*/
 
-footer {
-    margin-top: 2cm;
-    background: #6495ED;
-    position: absolute;
-    bottom: -80%;
-    padding-bottom: 30px;
-    width: 100%;
-    height: 40%;
-}
-
-
-.rodapechar {
-    margin-left: 2cm;
-    float: left;
-}
-
-#logorodape {
-    margin-top: 4cm;
-    height: 80px;
-    width: 30%;
-    float: left;
-}
-
-/**PG COMPRAS*/
 
