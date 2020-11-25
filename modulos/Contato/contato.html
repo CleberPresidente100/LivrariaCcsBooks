@@ -10,7 +10,8 @@
     <!-- Nome da Disciplina -->
     <meta name="disciplina" content="Ciencia da Computacao I">
     <!-- Desenvolvedor da página -->
-    <meta name="author" content="Cleber da Silva Melo , Caio Silva Barbara, Sâmila Milena P. A. Dias , Richard de Freitas Galhardo , Nicolas Barbosa Correia">
+    <meta name="author"
+        content="Cleber da Silva Melo , Caio Silva Barbara, Sâmila Milena P. A. Dias , Richard de Freitas Galhardo , Nicolas Barbosa Correia">
     <!-- Desenvolvedor da página -->
     <meta name="curso" content="Ciencia da Computacao">
     <!-- Desenvolvedor da página -->
@@ -20,7 +21,7 @@
     <!-- Bibliotecas de CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
     <link rel="stylesheet" type="text/css" href="../../css/busca.css">
-    <link rel="stylesheet" type="text/css" href="..\Contato\contato.css">
+    <link rel="stylesheet" type="text/css" href="../Contato/contato.css">
     <script src="..\Contato\contato.js"></script>
     <script type="text/javascript" src="../../js/inicial.js"></script>
 
@@ -37,11 +38,13 @@
                 <a href="../PaginaInicial/inicial.html"> <img src="../../imagens/logo2.png" alt="CcsBooks"
                         id="logo"></a>
 
-                <a href="../CadastroUsuarios/cadastro.html"> <img src="../../imagens/icone-cadastro.png"
+                <a href="../Cadastro/cadastro.html"> <img src="../../imagens/icone-cadastro.png"
                         onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" id="cadastro"></a>
-                <a href=""> <img src="../../imagens/icone-compras.png" onMouseOver="mouseEmCima2(this)"
-                        onMouseOut="mouseFora2(this)" id="carrinho"> </a>
-                <a href="../LoginUsuario/login.html"> <img src="../../imagens/login.png" alt="login" id="iconeLogin"></a>
+                <a href="../Carrinho/carrinho.html"> <img src="../../imagens/icone-compras.png"
+                        onMouseOver="mouseEmCima2(this)" onMouseOut="mouseFora2(this)" id="carrinho"> </a>
+                <a href="../LoginUsuario/login.html"> <img src="../../imagens/icone-login.png"
+                        onmouseover="mouseEmCima3(this)" onMouseOut="mouseFora3(this)" alt="login" id="iconeLogin"></a>
+
 
                 <!--botão de busca -->
                 <form action=" " method="post" id="busca">
@@ -53,9 +56,15 @@
                 <!--menu------------>
                 <nav id="menu">
                     <ul>
-                        <a href="../PaginaInicial/inicial.html"><li>inicio</li></a>
-                        <a href="../Compras/Compras.html"><li>Livros</li></a>
-                        <a href="../Contato/contato.html"><li>contato</li></a>
+                        <a href="../PaginaInicial/inicial.html">
+                            <li>inicio</li>
+                        </a>
+                        <a href="../Compras/Compras.html">
+                            <li>Livros</li>
+                        </a>
+                        <a href="../Contato/contato.html">
+                            <li>contato</li>
+                        </a>
                     </ul>
                 </nav>
             </div>
@@ -104,7 +113,8 @@
                                     <b>Digite aqui sua mensagem:<b>
                                             <br></br>
                                             <textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2"
-                                                required  minlength="20" maxlength="110" id="mensagem"></textarea></br></br>
+                                                required minlength="20" maxlength="110"
+                                                id="mensagem"></textarea></br></br>
                                             <input type="submit" name="enviar" value="Enviar" id="enviar"
                                                 onclick="Validacao()">
                                 </div>
@@ -124,11 +134,18 @@
     </div>
     <!--rodape----------->
     <footer>
-        <img src="../../imagens/logo.png" alt="logo" id="logoRodape">
-        <ul>
-            <li>facebook</li>
-            <li>instagram</li>
-        </ul>
+        <p id="maior">Ccs books</p>
+        <p>&copy livraria digital 2020</p>
+
+
+        <a href="https://pt-br.facebook.com/" target="_blank"> <img src="../../imagens/facebook.png" alt="facebook"
+                onMouseOver="mouseEmCima4(this)" onMouseOut="mouseFora4(this)" id="footerface"></a>
+
+        <a href="https://www.instagram.com/?hl=pt-br" target="_blank"> <img src="../../imagens/instagram.png"
+                alt="instagram" onMouseOver="mouseEmCima5(this)" onMouseOut="mouseFora5(this)" id="footerinsta"></a>
+
+        <a href="https://twitter.com/login?lang=pt" target="_blank"> <img src="../../imagens/twitter.png" alt="twitter"
+                onMouseOver="mouseEmCima6(this)" onMouseOut="mouseFora6(this)" id="footertwitter"> </a>
     </footer>
 
 </body>
