@@ -86,22 +86,38 @@ nav#menu a:hover{
 
 /*--------------------------------------------------------------------------footer-----------------------------------*/
 footer{
-	display: block;
-	border-top: 1px solid black;
 	width: 90%;
-	height: 70px;
-	margin: 0px auto 0 auto;
+	height: 100px;
+}
+
+footer p{
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	margin: 10px;
+	margin-left: -10px;
+}
+#maior{
+	display: inline-block;
+	color: whitesmoke;
+	font-size: 50px;
+	margin-left: 90px;
 
 }
-footer ul{
-	text-align: center;
-	list-style: none;
-	padding: 5px;
-}
-#logoRodape{
+#footerface{
 	position: absolute;
-	padding: 5px;
-	left: 10px;
-	width: 200px;
-	height: 100px;
+	margin-top: 10px;
+	right: 70px;
+}
+#footerinsta{
+	position: absolute;
+	margin-top: 10px;
+	right: 110px;
+}
+#footertwitter{
+	position: absolute;
+	right: 150px;
+	margin-top: 10px;
+
 }

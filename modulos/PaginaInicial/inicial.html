@@ -20,9 +20,11 @@
     <!-- Palavras chaves para buscas -->
     <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,PROVA,CIENCIA DA COMPUTACAO">
     <!-- Bibliotecas de CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/estiloInicial.css">
-    <link rel="stylesheet" type="text/css" href="../css/busca.css">
-    <script type="text/javascript" src="../js/inicial.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/busca.css">
+   
+    <script type="text/javascript" src="../../js/inicial.js"></script>
 
 </head>
 
@@ -32,84 +34,67 @@
 
         <header>
             <div id="cabecalho">
-                <a href="inicial.html"> <img src="../imagens/logo2.png" alt="CcsBooks" id="logo"></a>
+                
+            <!--imagens do cabeçalho-->
+                <a href="../PaginaInicial/inicial.html"> <img src="../../imagens/logo2.png" alt="CcsBooks" id="logo"></a>
 
-                <a href="cadastro.html"> <img src="../imagens/icone-cadastro.png" onMouseOver="mouseEmCima(this)"
-                        onMouseOut="mouseFora(this)" id="cadastro"></a>
-
-                <a href=""> <img src="../imagens/icone-compras.png" onMouseOver="mouseEmCima2(this)"
+                <a href="../Cadastro/cadastro.html"> <img src="../../imagens/icone-cadastro.png"
+                        onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" id="cadastro"></a>
+                <a href="../Carrinho/carrinho.html"> <img src="../../imagens/icone-compras.png" onMouseOver="mouseEmCima2(this)"
                         onMouseOut="mouseFora2(this)" id="carrinho"> </a>
-
+                <a href="../LoginUsuario/login.html"> <img src="../../imagens/icone-login.png" onmouseover="mouseEmCima3(this)" onMouseOut="mouseFora3(this)" alt="login" id="iconeLogin"></a>
+                
+            <!--botão de busca -->
                 <form action=" " method="post" id="busca">
                     <label for="busca">Buscar</label>
                     <input type="search" name="q" placeholder="Pesquisar...">
                     <button type="submit"></button>
                 </form>
 
-
+            <!--menu------------>
                 <nav id="menu">
                     <ul>
-                        <a href="inicial.html">
-                            <li>inicio</li>
-                        </a>
-                        <a href="">
-                            <li>Livros</li>
-                        </a>
-                        <a href="contato.html">
-                            <li>contato</li>
-                        </a>
+                        <a href="../PaginaInicial/inicial.html"><li>inicio</li></a>
+                        <a href="../Compras/Compras.html"><li>Livros</li></a>
+                        <a href="../Contato/contato.html"><li>contato</li></a>
                     </ul>
                 </nav>
-
             </div>
-
         </header>
+        <div id="conteudo" >
 
-        <section>
-            <div id="slider">
-                <h1>slider com promoções</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore vero voluptatibus excepturi
-                    asperiores. Molestiae ea doloribus consequatur et, iste reiciendis nam omnis perferendis tempora
-                    architecto pariatur? Voluptas laudantium beatae fugiat?</p>
-                <p>Optio tempore sed quam eligendi quisquam vero qui molestias sint ullam cupiditate pariatur alias
-                    dignissimos, sunt aliquam corporis animi consectetur? In tempore quod facere necessitatibus
-                    eligendi eos sunt provident modi!</p>
-                <p>Qui, cum, aut cumque pariatur fugiat alias magnam eaque, provident hic inventore perferendis
-                    aliquam voluptates quasi voluptatum blanditiis quo. Magni praesentium sunt ullam placeat
-                    temporibus veritatis eveniet nam beatae quas?</p>
-                <p>Sunt, delectus eos reprehenderit repellat dolore molestias corrupti officia dicta minus iure
-                    veritatis nisi beatae dolores ratione sed possimus quibusdam facilis! Quia, recusandae modi ea
-                    beatae blanditiis hic dolor iure?</p>
-                <p>Ad autem provident reprehenderit voluptates alias voluptatibus unde sit maiores ipsa, quam
-                    voluptatem at consequatur nihil maxime molestias. Velit, hic voluptatem. Quasi velit debitis,
-                    non vel inventore libero eligendi nihil!</p>
+            <div id="banner">
+               <a href=""> <img class="Ofertas" src="Slide.gif" width="100%" height="200px"></a>
             </div>
-            
+
             <div id="sobre">
-                <h1>sobre a CcsBooks</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, error numquam ipsum iure
-                    placeat animi. Officia dolores ex vero recusandae, sed quam provident quo! Dolore necessitatibus
-                    provident voluptatum expedita ipsam?</p>
-                <p>Commodi nihil nam amet incidunt voluptas nisi accusamus facilis repellendus eum quisquam cum
-                    earum excepturi rem fugit eveniet nulla, aliquid mollitia corporis doloremque unde. Est dicta
-                    nobis assumenda repellat sit.</p>
-                <p>Non similique quibusdam deserunt eos ullam fuga voluptate amet. Magni voluptatum maxime quas
-                    praesentium vero rerum veniam voluptatem in at nihil fuga, libero deserunt qui ullam. Obcaecati
-                    voluptate ab omnis!</p>
-                <p>Veritatis fuga sequi, quo dolorem eum minus natus saepe facilis itaque minima vel inventore
-                    voluptatum ullam aspernatur consequatur officiis vero aperiam quam autem molestias? Ab beatae
-                    dignissimos neque numquam id.</p>
+                <div id="biblioteca">
+                    <img src="biblioteca.jpg" alt="biblioteca">
+                </div>
+                <h1>Ccs BooKs</h1>
+                <blockquote cite="https://www.mensagenscomamor.com/frases-livraria">
+                    <p> <q> <i> A livraria é o paraíso para aqueles que são apaixonados por livros. Nela, os leitores podem sentir a paz e a tranquilidade das palavras e do conhecimento, mas devem conter aquela louca vontade de comprar tudo de uma vez. </i></q></p>
+                  </blockquote>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis dolorem error distinctio voluptate maxime, optio et. Vitae molestiae reiciendis ipsa voluptates maxime! Tempora sed quod doloribus ea consequuntur ducimus.</p>
             </div>
-        </section>
+
+        </div>
 
     </div>
-
+    <!--rodape----------->
     <footer>
-        <ul>
-            <li>facebook</li>
-            <li>instagram</li>
-        </ul>
+       
+            <p id="maior">Ccs books</p>
+            <p>&copy livraria digital 2020</p>
+
+        
+            <a href="https://pt-br.facebook.com/" target="_blank"> <img src="../../imagens/facebook.png" alt="facebook" onMouseOver="mouseEmCima4(this)" onMouseOut="mouseFora4(this)" id="footerface"></a>
+        
+            <a href="https://www.instagram.com/?hl=pt-br"target="_blank"> <img src="../../imagens/instagram.png" alt="instagram" onMouseOver="mouseEmCima5(this)" onMouseOut="mouseFora5(this)" id="footerinsta"></a>
+        
+            <a href="https://twitter.com/login?lang=pt" target="_blank"> <img src="../../imagens/twitter.png" alt="twitter" onMouseOver="mouseEmCima6(this)" onMouseOut="mouseFora6(this)" id="footertwitter"> </a>
     </footer>
+    
 </body>
 
 </html>
