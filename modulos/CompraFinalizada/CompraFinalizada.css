@@ -1,0 +1,26 @@
+﻿body
+{
+}
+#FinalizarCompras {
+    width: 100%;
+    margin: 30px auto;
+    background: #4169E1;
+    border: 1px black solid;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.FinalizarCompras {
+    margin: 30px auto;
+}
+#FinalizarMsg {
+    width: 100%;
+    right: 70px;
+    margin: 40px auto;
+    background: #DCDCDC;
+    margin-right: 300px;
+    font-size: 18px;
+}
+.FinalizarMsg {
+    margin: 30px auto;
+}
