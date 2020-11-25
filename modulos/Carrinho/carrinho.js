@@ -1,18 +1,18 @@
 carrinho = [];
 
 //recebe o ID do livro e conta o número total de produtos no carrinho
-function contadorCarrinho(id) {
+function contadorCarrinho(id, valor) {
     numeroProdutos = localStorage.getItem('noCarrinho');
     numeroProdutos=parseInt(numeroProdutos);
     if(numeroProdutos > 0)
         localStorage.setItem('noCarrinho', numeroProdutos + 1);
     else
         localStorage.setItem('noCarrinho', 1);
-    adicionarCarrinho(id);
+    adicionarCarrinho(id, valor);
  };
 
 
-function adicionarCarrinho(id) {
+function adicionarCarrinho(id, valor) {
     teste = 0;
     //caso já haja itens no carrinho, procura o item que foi selecionado
     if(carrinho.length > 0){ 
@@ -28,16 +28,17 @@ function adicionarCarrinho(id) {
     }
     //se não houver itens no carrinho, adiciona o item atual
     else 
-        adicionarLivro(id);  
+        adicionarLivro(id, valor);  
 }
 //cria a estrutura dos produtos
-function adicionarLivro(id){
+function adicionarLivro(id, valor){
 
-
+    valor = parseFloat(valor);
 
     carrinho.push({
         idLivro: id,
         quantidade: 0,
+        valorLivro: valor,
     });
     salvarProdutos(carrinho[carrinho.length-1]);
 }

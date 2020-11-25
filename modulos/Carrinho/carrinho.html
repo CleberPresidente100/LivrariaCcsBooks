@@ -27,26 +27,28 @@
                 let listaProdutos = document.querySelector(".produtos");
                 if(produtoCarrinho && listaProdutos){
                     listaProdutos.innerHTML = '';
+                    
                     Object.values(produtoCarrinho).map(item => {
+                        valorTotal = valorTotal + (item.valorLivro * item.quantidade);
                         listaProdutos.innerHTML += `
                         <div class="livros">
                             <input class="botao" type="image" src="../../imagens/BotaoX.png" height="50" width="50" onClick="removerProduto(id)" id="${item.idLivro}"> </input>
                             <img src="../../capasLivros/${item.idLivro}.jpg" height="170" width="150">
                         </div>
-                        <div class="preco">$15,00</div>
+                        <div class="preco">R$${item.valorLivro}</div>
                         <div class="quantidade">
                             <input class="botao-esquerda" type="image" src="../../imagens/SetaE.png" height="25" width="25" onClick="diminuirProduto(id)" id="${item.idLivro}"> </input>
                             <span>${item.quantidade}</span>
                             <input class="botao-direita" type="image" src="../../imagens/SetaD.png" height="25" width="25" onClick="contadorCarrinho(id)" id="${item.idLivro}"> </input>
                         </div>
                         <div class="total">
-                            $${item.quantidade * 15},00
+                            R$${item.quantidade * item.valorLivro}
                         </div>
                         `
                     });
                     listaProdutos.innerHTML += `
-                    <h3 class="frete">Frete:$9,90<br></h3>
-                    <div class="valor-total"><br><br>Valor total: $30,00</div>
+                    <h3 class="frete">Frete: R$9,90<br></h3>
+                    <div class="valor-total"><br><br>Valor total: R$${valorTotal+9.90}</div>
                     `
                 }
 
