@@ -7,7 +7,7 @@ input:invalid {
     border-color: #778899;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4 {
     color: #363636;
     font-family: courier,arial,helvetica;
     margin: 3px;
@@ -161,14 +161,6 @@ body {
     border-radius: 7px;
 }
 /*Botão Div oculta*/
-.comprarOculto2 {
-    border: 2px solid;
-    height: 30px;
-    width: 150px;
-    border-color: #5F9EA0;
-    background: #5F9EA0;
-    border-radius: 3px;
-}
 .comprarOculto, .saibamais {
     border: 2px solid;
     height: 30px;
