@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.interface{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	padding: 5px;
+	align-items: center;
+	margin: 0 auto;
+	background-color: whitesmoke;
+	border: 1px black solid;
+	box-shadow: 2px 1px 5px;
+}
+body{
+	background-image:url(../imagens/fundo.jpg);
+	margin: 0;
+	padding: 0;
+}
+header{/*------------------------------------------------------------------header------------------------------------*/
+	position: relative;
+	width: 100%;
+	height: 215px;
+	margin-bottom: 10px;
+}
+#cabecalho{
+	position: relative;
+	height: 215px;
+}
+
+#logo{
+	position: absolute;
+	left: 50%;
+	margin-left: -174.5px;
+}
+#cadastro{
+	position: absolute;
+	margin: 10px;
+}
+#carrinho{
+	position: absolute;
+	width: 50px;
+	right: 10px;
+}
+#iconeLogin{
+	position: absolute;
+	top: 100px;
+	margin: 10px;
+}
+#menu{
+	display: block;
+	width: 95%;
+	}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	background-color: #3d63ce;
+	width: 100%;
+	display:flex; 
+	justify-content:space-around;
+	top: 173px;
+	position: absolute;
+}
+nav#menu a{
+	border: 1px black solid;
+	display: inline-block;
+	width: 33.33%;
+	text-align: center;
+	padding: 2px;
+	text-decoration: none;
+	color: black;
+}
+nav#menu a:hover{
+	background-color: rgb(34, 62, 185);
+	color: white;
+}
+
+/*-------------------------------------------------------------------------conteudo----------------------------------*/
+#conteudo{
+	width: 100%;
+	height: 100%;
+}
+
+/*--------------------------------------------------------------------------footer-----------------------------------*/
+footer{
+	display: block;
+	border-top: 1px solid black;
+	width: 90%;
+	height: 70px;
+	margin: 0px auto 0 auto;
+
+}
+footer ul{
+	text-align: center;
+	list-style: none;
+	padding: 5px;
+}
+#logoRodape{
+	position: absolute;
+	padding: 5px;
+	left: 10px;
+	width: 200px;
+	height: 100px;
+}
