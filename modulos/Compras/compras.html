@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="..\Compras\styleBase2.css">
     <link rel="stylesheet" type="text/css" href="../../js/inicial.js">
     <script src="..\Compras\compras.js"></script>
+    <script src="../carrinho/carrinho.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <script type="text/javascript" src="../../js/inicial.js"></script>
 
@@ -100,7 +101,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil01.jpg">
                         <div class="imginterna">
                             <p><br>Nome: Pé de pilão</br><s>De: 34,99</s> </br>por Apenas: R$27,90</p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil1" id="27.90">
                             <button id="myBtn" class="comprar" onclick="submenu('myBtn','myModal','close')">
                                 SAIBA
                                 MAIS
@@ -161,7 +162,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil02.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Parabéns Para Você!</br>Valor R$ 33,35</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil2" id="33.35">
                             <button id="myBtn2" class="comprar" onclick="submenu('myBtn2','myModal2','close2')">
                                 SAIBA
                                 MAIS
@@ -221,7 +222,7 @@
                                 </br>Nome: Sinto o que sinto:e a incrível história de Asta e Jaser</br>Valor: R$
                                 33,92</br>
                             </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil3" id="33.92">
                             <button id="myBtn3" class="comprar" onclick="submenu('myBtn3','myModal3','close3')">
                                 SAIBA
                                 MAIS
@@ -275,7 +276,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil04.jpg">
                         <div class="imginterna">
                             <p></br>Nome:A Vizinha Antipática que Sabia Matemática</br>Valor: R$ 34,90</p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar"  onclick="contadorCarrinho(title, id)" title="Infantil4" id="34.90">
                             <button id="myBtn9" class="comprar" onclick="submenu('myBtn9','myModal9','close9')">
                                 SAIBA
                                 MAIS
@@ -331,7 +332,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil05.jpg">
                         <div class="imginterna">
                             <p></br>Nome:A cor de Coraline</br>Valor R$ 33,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil5" id="33.90">
                             <button id="myBtn10" class="comprar"
                                     onclick="submenu('myBtn10','myModal10','close10')">
                                 SAIBA
@@ -389,7 +390,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil06.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Turma da Monica Como? Onde? Por Quê?</br>Valor: R$ 59,90 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil6" id="59.90">
                             <button id="myBtn4" class="comprar" onclick="submenu('myBtn4','myModal4','close4')">
                                 SAIBA
                                 MAIS
@@ -446,7 +447,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil07.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Minha Pequena Luz</br><s>De 34,99</s></br>Por apenasR$ 31,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil7" id="31.90">
                             <button id="myBtn5" class="comprar" onclick="submenu('myBtn5','myModal5','close5')">
                                 SAIBA
                                 MAIS
@@ -502,7 +503,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil08.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Sob A Luz Do Luar</br>Valor: R$ 29,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil8" id="29.90">
                             <button id="myBtn6" class="comprar" onclick="submenu('myBtn6','myModal6','close6')">
                                 SAIBA
                                 MAIS
@@ -563,7 +564,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil09.jpg">
                         <div class="imginterna">
                             <p></br>Nome: O Jardim Secreto</br>Valor R$ 36,00</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil9" id="36.00">
                             <button id="myBtn7" class="comprar" onclick="submenu('myBtn7','myModal7','close7')">
                                 SAIBA
                                 MAIS
@@ -624,7 +625,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Infantil10.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Viagens de Gulliver</br>Valor: R$ 36,00</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Infantil10" id="36.00">
                             <button id="myBtn8" class="comprar" onclick="submenu('myBtn8','myModal8','close8')">
                                 SAIBA
                                 MAIS
@@ -680,7 +681,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial01.jpg">
                         <div class="imginterna">
                             <p></br>Nome:Operações Especiais de Policiai Judiciaria</br>Valor R$ 37,00 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial1" id="37.00">
                             <button id="myBtn11" class="comprar"
                                     onclick="submenu('myBtn11','myModal11','close11')">
                                 SAIBA
@@ -736,7 +737,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial02.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Diario de um Policial </br>Valor R$ 37,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial2" id="37.90">
                             <button id="myBtn12" class="comprar"
                                     onclick="submenu('myBtn12','myModal12','close12')">
                                 SAIBA
@@ -793,7 +794,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial03.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Atividade Policial </br> Valor: R$ 84,15</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial3" id="84.15">
                             <button id="myBtn13" class="comprar"
                                     onclick="submenu('myBtn13','myModal13','close13')">
                                 SAIBA
@@ -855,7 +856,7 @@
                             <p>
                                 </br>Inteligência Policial Judiciaria </br><s>De: 59,90</s></br>Por apenas R$ 55,00</br>
                             </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial4" id="55.00">
                             <button id="myBtn14" class="comprar"
                                     onclick="submenu('myBtn14','myModal14','close14')">
                                 SAIBA
@@ -911,7 +912,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial05.jpg">
                         <div class="imginterna">
                             <p></br>Nome:Sniper de Elite </br>Valor: R$ 44,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial5" id="44.90">
                             <button id="myBtn15" class="comprar"
                                     onclick="submenu('myBtn15','myModal15','close15')">
                                 SAIBA
@@ -976,7 +977,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial06.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Vá e Venca : Desafiando a Tropa de Elite </br>Valor: R$ 28,99</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial6" id="28.99">
                             <button id="myBtn16" class="comprar"
                                     onclick="submenu('myBtn16','myModal16','close16')">
                                 SAIBA
@@ -1034,7 +1035,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial07.jpg">
                         <div class="imginterna">
                             <p></br>Nome:O ultimo policial </br>Valor: R$ 28,99 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial7" id="28.99">
                             <button id="myBtn17" class="comprar"
                                     onclick="submenu('myBtn17','myModal17','close17')">
                                 SAIBA
@@ -1093,7 +1094,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial08.jpg">
                         <div class="imginterna">
                             <p></br>Nome:Rota 66 : A história da policia que mata</br>Valor: R$ 55,99 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial8" id="55.99">
                             <button id="myBtn18" class="comprar"
                                     onclick="submenu('myBtn18','myModal18','close18')">
                                 SAIBA
@@ -1153,7 +1154,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Policial09.jpg">
                         <div class="imginterna">
                             <p></br> Caveiras : Toda tropa tem seus segredos</br>Valor: R$ 35,90 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial9" id="35.90">
                             <button id="myBtn19" class="comprar"
                                     onclick="submenu('myBtn19','myModal19','close19')">
                                 SAIBA
@@ -1216,7 +1217,7 @@
                                 </br>Nome: Quem matou o livro policial?</br><s>De:R$ 19,90</br></s>Por apenas: R$ 9,90
                                 </br>
                             </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Policial10" id="9.90">
                             <button id="myBtn20" class="comprar"
                                     onclick="submenu('myBtn20','myModal20','close20')">
                                 SAIBA
@@ -1282,7 +1283,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance1.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Teto Para Dois</br>Valor: R$ 42,9</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance1" id="42.90">
                             <button id="myBtn21" class="comprar"
                                     onclick="submenu('myBtn21','myModal21','close21')">
                                 SAIBA
@@ -1339,7 +1340,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance2.jpg">
                         <div class="imginterna">
                             <p></br>Nome: História De Um Grande Amor</br>Valor: R$ 42,9</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance2" id="42.90">
                             <button id="myBtn22" class="comprar"
                                     onclick="submenu('myBtn22','myModal22','close22')">
                                 SAIBA
@@ -1412,7 +1413,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance3.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Como Eu Era Antes de Você</br>Valor: R$ 36,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance3" id="36.90">
                             <button id="myBtn21" class="comprar"
                                     onclick="submenu('myBtn23','myModal23','close23')">
                                 SAIBA
@@ -1492,7 +1493,7 @@
                             <p>
                                 </br>Nome: Um Amor Para Recordar</br><s>De:R$ 32,90</s></br>Por apenas: R$ 27,90 </br>
                             </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance4" id="27.90">
                             <button id="myBtn24" class="comprar"
                                     onclick="submenu('myBtn24','myModal24','close24')">
                                 SAIBA
@@ -1554,7 +1555,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance5.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Filha Do Conde</br>Valor: R$ 39,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance5" id="39.90">
                             <button id="myBtn25" class="comprar"
                                     onclick="submenu('myBtn25','myModal25','close25')">
                                 SAIBA
@@ -1639,7 +1640,7 @@
                                 </br>Nome: Almas Gêmeas - Por Quanto Tempo Um Sonho Consegue Sobreviver?</br>Valor: R$
                                 37,90</br>
                             </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance6" id="37.90">
                             <button id="myBtn26" class="comprar"
                                     onclick="submenu('myBtn26','myModal26','close26')">
                                 SAIBA
@@ -1711,7 +1712,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance7.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Já Disse Que Te Amo?</br>Valor: R$ 27,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance7" id="27.90">
                             <button id="myBtn27" class="comprar"
                                     onclick="submenu('myBtn27','myModal27','close27')">
                                 SAIBA
@@ -1792,7 +1793,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance8.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Dama Mais Apaixonada</br><s>De: 33,99</br></s>Por apenas R$ 27,90 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance8" id="27.90">
                             <button id="myBtn28" class="comprar"
                                     onclick="submenu('myBtn28','myModal28','close28')">
                                 SAIBA
@@ -1869,7 +1870,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance9.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Contra Todas As Probabilidades Do Amor</br>Valor: R$ 16,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance9" id="16.90">
                             <button id="myBtn29" class="comprar"
                                     onclick="submenu('myBtn29','myModal29','close29')">
                                 SAIBA
@@ -1941,7 +1942,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\Romance10.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Esse Duque é Meu</br>Valor R$ 31,40</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Romance10" id="31.40">
                             <button id="myBtn30" class="comprar"
                                     onclick="submenu('myBtn30','myModal30','close30')">
                                 SAIBA
@@ -2003,7 +2004,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura61.jpg">
                         <div class="imginterna">
                             <p></br>Nome: As Aventuras de Mike</br><s>De:24,99</s></br>Por apenas: R$ 19,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura1" id="19.90">
                             <button id="myBtn31" class="comprar"
                                     onclick="submenu('myBtn31','myModal31','close31')">
                                 SAIBA
@@ -2071,7 +2072,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura62.jpg">
                         <div class="imginterna">
                             <p></br>Nome: As Aventuras de Sherlock Holmes</br>Valor: R$ 19,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura2" id="19.90">
                             <button id="myBtn32" class="comprar"
                                     onclick="submenu('myBtn32','myModal32','close32')">
                                 SAIBA
@@ -2131,7 +2132,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura63.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Rainha Vermelha</br>Valor: R$ 25,90</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura3" id="25.90">
                             <button id="myBtn33" class="comprar"
                                     onclick="submenu('myBtn33','myModal33','close33')">
                                 SAIBA
@@ -2189,7 +2190,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura64.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Jogador Nº 1</br>Valor: R$ 25,90</br><br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura4" id="25.90">
                             <button id="myBtn34" class="comprar"
                                     onclick="submenu('myBtn34','myModal34','close34')">
                                 SAIBA
@@ -2249,7 +2250,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura65.jpg">
                         <div class="imginterna">
                             <p></br>Nome: As Aventuras Na Netoland Com Luccas Neto</br>Valor: R$ 18,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura5" id="18.90">
                             <button id="myBtn35" class="comprar"
                                     onclick="submenu('myBtn35','myModal35','close35')">
                                 SAIBA
@@ -2308,7 +2309,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura66.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Die Unendliche Geschichte</br>Valor: R$ 84,50</br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura6" id="84.50">
                             <button id="myBtn36" class="comprar"
                                     onclick="submenu('myBtn36','myModal36','close36')">
                                 SAIBA
@@ -2379,7 +2380,7 @@
                                 Nome: As Aventuras de Sherlock Holmes</br><s>De: 32,50</br></s>Por: apenas: R$
                                 27,90</br>
                             </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura7" id="27.90">
                             <button id="myBtn37" class="comprar"
                                     onclick="submenu('myBtn37','myModal37','close37')">
                                 SAIBA
@@ -2432,7 +2433,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura68.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Viajante do Tempo</br>Valor: R$ 39,89 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura8" id="39.89">
                             <button id="myBtn38" class="comprar"
                                     onclick="submenu('myBtn38','myModal38','close38')">
                                 SAIBA
@@ -2490,7 +2491,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura69.jpg">
                         <div class="imginterna">
                             <p></br>Nome: The Amber Spyglass</br>Valor R$ 42,89 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura9" id="42.89">
                             <button id="myBtn39" class="comprar"
                                     onclick="submenu('myBtn39','myModal39','close39')">
                                 SAIBA
@@ -2549,7 +2550,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\aventura70.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A grande aventura de Maria Fumaça</br>Valor R$ 29,50 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Aventura10" id="29.50">
                             <button id="myBtn40" class="comprar"
                                     onclick="submenu('myBtn40','myModal40','close40')">
                                 SAIBA
@@ -2614,7 +2615,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao01.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Máquina do Tempo: Uma Invenção</br>Valor: R$ 29,50 </p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao1" id="29.50">
                             <button id="myBtn61" class="comprar"
                                     onclick="submenu('myBtn61','myModal61','close61')">
                                 SAIBA
@@ -2684,7 +2685,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao02.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Garota Do Lago</br>Valor: R$ 12,90 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao2" id="12.90">
                             <button id="myBtn62" class="comprar"
                                     onclick="submenu('myBtn62','myModal62','close62')">
                                 SAIBA
@@ -2763,7 +2764,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao03.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Caixa de passaros: Não abra os olhos</br>Valor: R$ 10,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao3" id="10.90">
                             <button id="myBtn63" class="comprar"
                                     onclick="submenu('myBtn63','myModal63','close63')">
                                 SAIBA
@@ -2834,7 +2835,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao04.jpg">
                         <div class="imginterna">
                             <p></br>Nome: O homem de giz</br>Valor: R$ 34,99 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao4" id="34.99">
                             <button id="myBtn64" class="comprar"
                                     onclick="submenu('myBtn64','myModal64','close64')">
                                 SAIBA
@@ -2904,7 +2905,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao05.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Sherlock Holmes - Casos Extraordinários</br>Valor: R$ 29,89 </br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao5" id="29.89">
                             <button id="myBtn65" class="comprar"
                                     onclick="submenu('myBtn65','myModal65','close65')">
                                 SAIBA
@@ -2985,7 +2986,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao06.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A cabana</br>Valor: R$ 47,00 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao6" id="47.00">
                             <button id="myBtn66" class="comprar"
                                     onclick="submenu('myBtn66','myModal66','close66')">
                                 SAIBA
@@ -3065,7 +3066,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao07.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A Garota No Trem</br>Valor: R$ 34,90 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao7" id="34.90">
                             <button id="myBtn67" class="comprar"
                                     onclick="submenu('myBtn67','myModal67','close67')">
                                 SAIBA
@@ -3143,7 +3144,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao08.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A culpa é das estrelas</br>Valor: R$ 28,79 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao8" id="28.79">
                             <button id="myBtn68" class="comprar"
                                     onclick="submenu('myBtn68','myModal68','close68')">
                                 SAIBA
@@ -3213,7 +3214,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao09.jpg">
                         <div class="imginterna">
                             <p></br>Nome: A guerra dos mundos</br>Valor: R$ 47,50 </br></br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao9" id="47.50">
                             <button id="myBtn69" class="comprar"
                                     onclick="submenu('myBtn69','myModal69','close69')">
                                 SAIBA
@@ -3278,7 +3279,7 @@
                         <img class="imgFrontal" src="..\Compras\Livraria\ficcao10.jpg">
                         <div class="imginterna">
                             <p></br>Nome: Perdido Em Marte-Uma Missão A Marte.</br>Valor: R$ 29,90</br></p>
-                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar">
+                            <input type="submit" name="comprarinfantil" value="COMPRAR" class="comprar" onclick="contadorCarrinho(title, id)" title="Ficcao10" id="29.90">
                             <button id="myBtn70" class="comprar"
                                     onclick="submenu('myBtn70','myModal70','close70')">
                                 SAIBA
