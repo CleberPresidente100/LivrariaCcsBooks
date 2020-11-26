@@ -2,21 +2,35 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
+    <!-- Configuração do Mapa de Caracteres -->
+    <meta charset="UTF-8">
+    <meta name="disciplina" content="Ciencia da Computacao I">
+    <meta name="curso" content="Ciencia da Computacao">
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,PROVA,CIENCIA DA COMPUTACAO I">
+    
     <title>Login</title>
-    <link rel='stylesheet' type='text/css' href='login.css'>
+
+    <!-- Bibliotecas de CSS -->
+    <link rel="stylesheet" type="text/css" href="login.css">
+    
+    <!-- Bibliotecas de JavaScript -->
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../../js/cookies.js"></script>
+    <script type="text/javascript" src="../../js/conexaoBanco.js"></script>
+    <script type="text/javascript" src="../../js/usuarios.js"></script>
+    <script type="text/javascript" src="login.js"></script>
 </head>
 
 <body>
     <div class="interface">
         <div id="caixaLogin">
             <img src="../../imagens/login.png" alt="login" id="loginImg">
-            <form>
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="senha" required>
-                <input type="submit" name="login" value="Entrar" id="logar" onclick="">
+            <form onsubmit="return efetuarLogin()" action="../PaginaInicial/inicial.html">
+                <input type="text" placeholder="E-mail" id="email" required>
+                <input type="password" placeholder="Senha" id="senha" required>
+                <input type="submit" name="login" value="Entrar" id="logar">
             </form>
-            <p>ainda não é cadastrado? <a href="../Cadastro/cadastro.html">Clique Aqui</a></p>
+            <p>ainda não é cadastrado? <a href="../cadastro/cadastro.html">Clique Aqui</a></p>
             <p id="inicio"> <a href="../PaginaInicial/inicial.html"> <<< Inicio </a></p>
         </div>
     </div>

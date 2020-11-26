@@ -5,22 +5,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cadastrar Usuário</title>
-
     <!-- Configuração do Mapa de Caracteres -->
     <meta charset="UTF-8">
-    <!-- Nome da Disciplina -->
     <meta name="disciplina" content="Ciencia da Computacao I">
-    <!-- Desenvolvedor da página -->
-    <meta name="author" content="Cleber da Silva Melo,">
-    <meta name="ra" content="335338215650">
     <meta name="curso" content="Ciencia da Computacao">
-    <meta name="semestre" content="5">
-    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,CLEBER,PROVA,CIENCIA DA COMPUTACAO">
+    <meta name="keywords" content="HTML,CSS,JAVA SCRIPT,PROVA,CIENCIA DA COMPUTACAO I">
 
+    <title>Cadastrar Usuário</title>
 
+    <!-- Bibliotecas de CSS -->
     <link rel="stylesheet" type="text/css" href="../cadastro/cadastro.css">
-    <script src="../cadastro/cadastro.js"></script>
+    
+    <!-- Bibliotecas de JavaScript -->
+    <!-- <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../../js/cookies.js"></script>
+    <script type="text/javascript" src="../../js/conexaoBanco.js"></script>
+    <script type="text/javascript" src="../../js/usuarios.js"></script>
+    <script type="text/javascript" src="cadastro.js"></script> -->
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/cookies.js"></script>
+    <script src="../../js/conexaoBanco.js"></script>
+    <script src="../../js/usuarios.js"></script>
+    <script src="cadastro.js"></script>
 
 
 </head>
@@ -32,84 +39,87 @@
             <img src="../../imagens/login.png" alt="login" id="loginImg2">
 
             </br></br></br>
-            <label class="tituloCampo">Nome de Usuário:</label>
-            <input class="Nome" type="text" id="nome" placeholder="Digite seu nome completo" minlength="5" maxlength="50" required><br><br>
+            <form onsubmit="return ValidacoesCampos()" action="../LoginUsuario/login.html">
 
-            <label class="tituloCampo">Celular:</label>
-            <input class="campoCelTel" type="text" id="CelTel" placeholder="(11)99229-XXXX"
-                   maxlength="15" minlength="15" required onkeypress="mascara11(this)">
-            <label class="tituloCampo">Telefone:</label>
-            <input class="campoCelTel" type="text" id="TelFixo" placeholder="(11)3500-XXXX"
-                   maxlength="14" minlength="14" required onkeypress="mascara22(this)"><br><br>
+                <label class="tituloCampo">Nome de Usuário:</label>
+                <input class="Nome" type="text" id="nome" placeholder="Digite seu nome completo" minlength="5" maxlength="50" required><br><br>
 
-
-
-            <label class="tituloCampo">Endereço:</label>
-            <input class="Endereco" type="text" id="Endereco" name="Endereco" placeholder="Ex: Rua XXXXXXX" minlength="5" maxlength="40" required>
-            <label class="tituloCampo">n°:</label>
-            <input class="CampoPequeno" type="text" id="n" name="email" placeholder="N° XX" minlength="1" maxlength="5" required><br><br>
-            <label class="tituloCampo">Bairro:</label>
-            <input class="BairroCidade" type="text" id="Cidade" name="Cidade" placeholder="Nome do Bairro" minlength="5" maxlength="20" required>
-            <label class="tituloCampo">Cidade:</label>
-            <input class="BairroCidade" type="text" id="Bairro" name="Bairro" placeholder="Nome da Cidade" minlength="5" maxlength="20" required></br></br>
-            <label class="tituloCampo">UF:</label>
-            <select class="UF" id="UF">
-                <option value="UF">UF</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select></br></br></br></br>
-
-            <label class="tituloCampo">Número Cartão:</label>
-            <input class="NuCartao" type="text" id="NuCartao" name="NuCartao" placeholder="XXXX XXXX XXXX XXXX"
-                   maxlength="20" minlength="20" onkeypress="ValidacaoCartao('NuCartao')" required></br></br>
+                <label class="tituloCampo">Celular:</label>
+                <input class="campoCelTel" type="text" id="CelTel" placeholder="(11)99229-XXXX"
+                    maxlength="15" minlength="15" required onkeypress="mascara11(this)">
+                <label class="tituloCampo">Telefone:</label>
+                <input class="campoCelTel" type="text" id="TelFixo" placeholder="(11)3500-XXXX"
+                    maxlength="14" minlength="14" required onkeypress="mascara22(this)"><br><br>
 
 
-            <label for="email" class="tituloCampo">E-mail:</label>
-            <input type="email" name="email" placeholder="Ex: username@dominio.com" class="Email1" id="email1" required minlength="5" maxlength="50"></input>
+
+                <label class="tituloCampo">Endereço:</label>
+                <input class="Endereco" type="text" id="Endereco" name="Endereco" placeholder="Ex: Rua XXXXXXX" minlength="5" maxlength="40" required>
+                <label class="tituloCampo">n°:</label>
+                <input class="CampoPequeno" type="text" id="numero" name="email" placeholder="N° XX" minlength="1" maxlength="5" required><br><br>
+                <label class="tituloCampo">Bairro:</label>
+                <input class="BairroCidade" type="text" id="Cidade" name="Cidade" placeholder="Nome do Bairro" minlength="5" maxlength="20" required>
+                <label class="tituloCampo">Cidade:</label>
+                <input class="BairroCidade" type="text" id="Bairro" name="Bairro" placeholder="Nome da Cidade" minlength="5" maxlength="20" required></br></br>
+                <label class="tituloCampo">UF:</label>
+                <select class="UF" id="UF">
+                    <option value="UF">UF</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select></br></br></br></br>
+
+                <label class="tituloCampo">Número Cartão:</label>
+                <input class="NuCartao" type="text" id="NuCartao" name="NuCartao" placeholder="XXXX XXXX XXXX XXXX"
+                    maxlength="20" minlength="20" onkeypress="ValidacaoCartao('NuCartao')" required></br></br>
 
 
-            <label for="email" class="tituloCampo">Confirme o E-mail:</label>
-            <input type="email" name="email" placeholder="Ex: username@dominio.com" class="Email2" id="email2" required minlength="5" maxlength="50"></input>
-            <div id="emailInvalid"> <span class="CamposInvalid">Os campos não coincidem.</span></div></br></br>
-
-            <label class="tituloCampo">Senha:</label>
-            <input class="Senha1" type="password" id="senha1" placeholder="Ex: senha" minlength="8" maxlength="50" required>
+                <label for="email" class="tituloCampo">E-mail:</label>
+                <input type="email" name="email" placeholder="Ex: username@dominio.com" class="Email1" id="email1" required minlength="5" maxlength="50"></input>
 
 
-            <label class="tituloCampo">Confirme a Senha:</label>
-            <input class="Senha2" type="password" id="senha2" placeholder="Ex: senha" minlength="8" maxlength="50" required><br>
-            <div id="SenhaInvalid"> <span class="CamposInvalid">Os campos não coincidem.</span></div></br></br></br></br>
+                <label for="email" class="tituloCampo">Confirme o E-mail:</label>
+                <input type="email" name="email" placeholder="Ex: username@dominio.com" class="Email2" id="email2" required minlength="5" maxlength="50"></input>
+                <div id="emailInvalid"> <span class="CamposInvalid">Os campos não coincidem.</span></div></br></br>
+
+                <label class="tituloCampo">Senha:</label>
+                <input class="Senha1" type="password" id="senha1" placeholder="Ex: senha" minlength="8" maxlength="50" required>
 
 
-            </br> <input class="BtSalvar" type="button" onclick="ValidacoesCampos()" value="Salvar">
-            <a  href="..\LoginUsuario\login.html">
-                <input class="BtLogin" type="button" value="Realizar Login">
-            </a>
+                <label class="tituloCampo">Confirme a Senha:</label>
+                <input class="Senha2" type="password" id="senha2" placeholder="Ex: senha" minlength="8" maxlength="50" required><br>
+                <div id="SenhaInvalid"> <span class="CamposInvalid">Os campos não coincidem.</span></div></br></br></br></br>
+
+
+                </br> <input class="BtSalvar" type="submit" value="Cadastrar">
+                <!-- <a  href="..\LoginUsuario\login.html">
+                    <input class="BtLogin" type="button" value="Realizar Login">
+                </a> -->
+            </form>
         </div>
     </div>
     <br />

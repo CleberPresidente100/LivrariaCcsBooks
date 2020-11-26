@@ -45,3 +45,4 @@ function mouseEmCima6(imagem) {
 function mouseFora6(imagem) {
     imagem.src = "../../imagens/twitter.png";
 }
+
