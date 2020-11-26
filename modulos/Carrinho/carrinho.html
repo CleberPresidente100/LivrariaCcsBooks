@@ -1,6 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="carrinho.css">
+
+        <script type="text/javascript" src="carrinho.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <script type="text/javascript" src="../../js/cookies.js"></script>
+        <script type="text/javascript" src="../../js/conexaoBanco.js"></script>
+        <script type="text/javascript" src="../../js/usuarios.js"></script>
     </head>
 
     
@@ -18,8 +24,6 @@
             </div>
         </div>
         <input type="submit" onclick="finalizarCompra()" class="finalizar-compra" value="FINALIZAR COMPRA"></input>
-        <script src="carrinho.js"></script>
-        <script src="../../js/livros.js"></script>
         <script>
             function mostrarCarrinho(){
                 carregarCarrinho();
@@ -62,6 +66,17 @@
                 }
 
             }
+            function finalizarCompra(){
+                if(ObterUsuarioLogado()){
+                    localStorage.clear();
+                    window.location.href = "../CompraFinalizada/CompraFinalizada.html"
+                }
+                else{
+                    alert("Realize login para continuar");
+                    window.location.href = "../LoginUsuario/login.html"
+               }
+            }
+
             mostrarCarrinho();
         </script>
     </body>
