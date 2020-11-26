@@ -217,40 +217,29 @@ function ObterDadosUsuario(email){
 
 function ObterUsuarioLogado(){
 
-    var dadosUsuario = null;
-
-    // Verifica se os campos estão preenchidos
-    if(EstaNuloOuVazio(email)){
-        console.log("E-mail inválido !");
-        return false;
-    }
+    console.log("Teste ObterUsuarioLogado");
 
     // Obtém a lista de todos os Usuários
     var tabelaLogin = LerTabela(nomeTabelaLogin);
-    // console.log("tabelaUsuarios : ", tabelaUsuarios);
+
+    console.log("tabelaLogin", tabelaLogin);
+
     
     // Verifica se o Nome de Usuário ou E-mail já estão cadastrados
     if(tabelaLogin != null){
 
-        var usuarioLogado = false;
         var tabelaLogin = tabelaLogin.split(EndOfRegister);
-        // console.log("listaDeUsuarios : ", listaDeUsuarios);
+        console.log ("tabelaLogin", tabelaLogin);
 
-        tabelaLogin.forEach(function (item){
+        var registroLogin = tabelaLogin[0].split(EndOfField);
+        console.log ("registroLogin", registroLogin);
 
-            var registroLogin = item.split(EndOfField);
-
-            if(registroLogin[PosicaoEmail] == email){
-
-                usuarioLogado = true;
-                return;
-            }
-        });
-
-        return usuarioLogado;
+        console.log ("registroLogin[PosicaoEmailUsuarioLogado]", registroLogin[PosicaoEmailUsuarioLogado]);
+        
+        return registroLogin[PosicaoEmailUsuarioLogado];
     }
 
-    return false;
+    return null;
 }
 
 

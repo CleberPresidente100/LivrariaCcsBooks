@@ -31,7 +31,7 @@ function ObterCookie(key){
         return null;
     }
 
-    console.log("key: ", key);
+    console.log("ObterCookie Key: ", key);
 
 
     // Obtém a lista de todos os Cookies
@@ -40,12 +40,10 @@ function ObterCookie(key){
 
     var chaveEncontrada = null; 
     allCookies.forEach(function(item){
+
         var cookie = item.split("=");
-        console.log("Item [0]: ", cookie[0]);
-        console.log("Item [1]: ", cookie[1]);
-        if(cookie[0] == key){
+        if(cookie[0].trim() == key.trim()){
             chaveEncontrada = cookie[1];
-            console.log("chaveEncontrada: ", cookie[1]);
             return;
         }
     });
