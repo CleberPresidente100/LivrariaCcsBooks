@@ -7,10 +7,13 @@ function Validacao() {
                 if (document.getElementById('telefonecelular').value.length >= 15) // validadar celular
                     if (document.getElementById('mensagem').value.length >= 20) {
                         alert('Obrigado(a) pelo seu contato, em breve retornaremos!');
+                        return true;
                     }
             }
         }
     }
+
+    return false;
    
 }
 function validarNome(nome) {

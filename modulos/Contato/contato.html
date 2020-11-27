@@ -82,7 +82,7 @@
                         informação desejada ou mesmo críticas e sugestões que estaremos sempre prontos para responder."
                     </h1>
 
-                    <form method="post" name="formulario">
+                    <form method="post" name="formulario" onsubmit="return Validacao()" action="../PaginaInicial/inicial.html">
                         </br> <input type="hidden" value="samila.milenna@gmail.com" name="CSSBOOKS"></input>
                         <b>Nome:<b><br>
                                 <div class="input">
@@ -115,8 +115,7 @@
                                             <textarea placeholder="Digite aqui sua mensagem" class="enviodemsg2"
                                                 required minlength="20" maxlength="110"
                                                 id="mensagem"></textarea></br></br>
-                                            <input type="submit" name="enviar" value="Enviar" id="enviar"
-                                                onclick="Validacao()">
+                                            <input type="submit" name="enviar" value="Enviar" id="enviar">
                                 </div>
 
                     </form>
