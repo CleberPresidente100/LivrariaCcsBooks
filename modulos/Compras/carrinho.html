@@ -1,5 +1,8 @@
 <html>
     <head>
+        
+        <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="../../css/busca.css">
         <link rel="stylesheet" type="text/css" href="carrinho.css">
 
         <script type="text/javascript" src="carrinho.js"></script>
@@ -12,18 +15,60 @@
     
 
     <body>
-        <div class="lista-produtos">
-            <div class="lista-produtos2">
-                <h5 class="nome-produto">LIVRO</h5>
-                <h5 class="preco">PREÇO</h5>
-                <h5 class="quantidade">QUANTIDADE</h5>
-                <h5 class="total">TOTAL</h5>
-            </div>
-            <div class="produtos">
+        <div class="interface">
+            <header>
+                <div id="cabecalho">
 
+                    <!--imagens do cabeçalho-->
+                    <a href="../PaginaInicial/inicial.html">
+                        <img src="../../imagens/logo2.png" alt="CcsBooks"
+                            id="logo">
+                    </a>
+
+                    <a href="../Cadastro/cadastro.html">
+                        <img src="../../imagens/icone-cadastro.png"
+                            onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" id="cadastro">
+                    </a>
+                    <a href="carrinho.html">
+                        <img src="../../imagens/icone-compras.png"
+                            onMouseOver="mouseEmCima2(this)" onMouseOut="mouseFora2(this)" id="carrinho">
+                    </a>
+                    <a href="../LoginUsuario/login.html">
+                        <img src="../../imagens/icone-login.png"
+                            onmouseover="mouseEmCima3(this)" onMouseOut="mouseFora3(this)" alt="login" id="iconeLogin">
+                    </a>
+
+                    <!--botão de busca -->
+                    <form action=" " method="post" id="busca">
+                        <label for="busca">Buscar</label>
+                        <input type="search" name="q" placeholder="Pesquisar...">
+                        <button type="submit"></button>
+                    </form>
+
+                    <!--menu------------>
+                    <nav id="menu">
+                        <ul>
+                            <a href="../PaginaInicial/inicial.html"><li>inicio</li></a>
+                            <a href="../Compras/compras.html"><li>Livros</li></a>
+                            <a href="../Contato/contato.html"><li>contato</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="lista-produtos">
+                <div class="lista-produtos2">
+                    <h5 class="nome-produto">LIVRO</h5>
+                    <h5 class="preco">PREÇO</h5>
+                    <h5 class="quantidade">QUANTIDADE</h5>
+                    <h5 class="total">TOTAL</h5>
+                </div>
+                <div class="produtos">
+
+                </div>
             </div>
+            <input type="submit" onclick="finalizarCompra()" class="finalizar-compra" value="FINALIZAR COMPRA"></input>
         </div>
-        <input type="submit" onclick="finalizarCompra()" class="finalizar-compra" value="FINALIZAR COMPRA"></input>
         <script>
             function mostrarCarrinho(){
                 carregarCarrinho();
