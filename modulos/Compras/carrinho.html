@@ -15,7 +15,7 @@
     
 
     <body>
-        <div class="interface">
+        <div class="interface" id="fundo">
             <header>
                 <div id="cabecalho">
 
@@ -69,18 +69,46 @@
             </div>
             <input type="submit" onclick="finalizarCompra()" class="finalizar-compra" value="FINALIZAR COMPRA"></input>
         </div>
+        
+        <!--rodape----------->
+        <footer>
+            <p id="maior">Ccs books</p>
+            <p>&copy livraria digital 2020</p>
+
+
+            <a href="https://pt-br.facebook.com/" target="_blank">
+                <img src="../../imagens/facebook.png" alt="facebook"
+                    onMouseOver="mouseEmCima4(this)" onMouseOut="mouseFora4(this)" id="footerface">
+            </a>
+
+            <a href="https://www.instagram.com/?hl=pt-br" target="_blank">
+                <img src="../../imagens/instagram.png"
+                    alt="instagram" onMouseOver="mouseEmCima5(this)" onMouseOut="mouseFora5(this)" id="footerinsta">
+            </a>
+
+            <a href="https://twitter.com/login?lang=pt" target="_blank">
+                <img src="../../imagens/twitter.png" alt="twitter"
+                    onMouseOver="mouseEmCima6(this)" onMouseOut="mouseFora6(this)" id="footertwitter">
+            </a>
+        </footer>
+
+        
         <script>
             function mostrarCarrinho(){
                 carregarCarrinho();
+                var Contador = 3;
                 var valorTotal = 0;
                 var valorAtual;
                 var valorLivro;
                 var frete = 9.90;
+                
+
                 let listaProdutos = document.querySelector(".produtos");
                 if(produtoCarrinho && listaProdutos){
                     listaProdutos.innerHTML = '';
                     
                     Object.values(produtoCarrinho).map(item => {
+                        Contador++;
                         valorAtual = item.valorLivro * item.quantidade;
                         valorTotal = valorTotal + valorAtual;
                         valorAtual = (Math.round(valorAtual * 100)/100).toFixed(2);
@@ -103,6 +131,12 @@
                     });
                     valorTotal = valorTotal + frete;
                     valorTotal = (Math.round(valorTotal * 100)/100).toFixed(2);
+
+                    // Redimensiona o Fundo Branco do Carrinho
+                    var fundo = document.getElementById("fundo");
+                        fundo.style.marginBottom = "100px";
+                        fundo.style.height = Contador * 170;
+
                     
                     listaProdutos.innerHTML += `
                     <h3 class="frete">Frete: R$9,90<br></h3>
